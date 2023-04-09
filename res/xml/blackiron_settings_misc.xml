@@ -26,6 +26,18 @@
                 android:targetClass="com.android.phone.settings.RadioInfo" />
     </Preference>
 
+    <com.android.settings.custom.preference.SecureSettingSwitchPreference
+        android:key="window_ignore_secure"
+        android:title="@string/window_ignore_secure_title"
+        android:summary="@string/window_ignore_secure_summary"
+        android:defaultValue="false" />
+
+    <com.android.settingslib.widget.FooterPreference
+        android:key="window_ignore_secure_footer"
+        android:title="@string/window_ignore_secure_warning"
+        android:selectable="false"
+        settings:searchable="false"/>
+
        <!-- In-call feedback -->
     <com.android.settings.custom.preference.SystemSettingSwitchPreference
         android:key="incall_feeedback_vibrate"
