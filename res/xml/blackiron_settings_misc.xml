@@ -26,4 +26,11 @@
                 android:targetClass="com.android.phone.settings.RadioInfo" />
     </Preference>
 
+       <!-- In-call feedback -->
+    <com.android.settings.custom.preference.SystemSettingSwitchPreference
+        android:key="incall_feeedback_vibrate"
+        android:title="@string/incall_feeedback_vibrate_title"
+        android:defaultValue="false"
+        settings:controller="com.android.settings.sound.IncallFeedbackPreferenceController" />
+
 </PreferenceScreen>
