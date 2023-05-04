@@ -27,6 +27,7 @@
     <string name="volume_title">Volume rockers</string>
     <string name="notifications_title">Notifications</string>
     <string name="theme_category">Theme</string>
+    <string name="fingerprint_category">FP Sensor</string>
 
     <!-- General strings -->
     <string name="ok">OK</string>
@@ -126,4 +127,11 @@
     <!-- Old mobile type icons -->
     <string name="use_old_mobiletype_title">Small mobile type icon</string>
     <string name="use_old_mobiletype_summary">Show mobile type icon on top of the signal indicator</string>
+
+    <!-- Fingerprint authentication vibration -->
+    <string name="fprint_sucess_vib_title">Fingerprint success vibration</string>
+    <string name="fprint_sucess_vib_summary">Vibrate on successful fingerprint authentication</string>
+    <string name="fprint_error_vib_title">Fingerprint error vibration</string>
+    <string name="fprint_error_vib_summary">Vibrate on failed fingerprint authentication</string>
+
 </resources>
