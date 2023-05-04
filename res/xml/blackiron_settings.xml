@@ -87,12 +87,4 @@
             android:fragment="com.blackiron.settings.fragments.MiscSettings"
             android:icon="@drawable/ic_settings_miscs"/>
 
-        <!-- Device Part -->
-        <Preference
-            android:key="device_part"
-            android:persistent="false"
-            android:title="@string/device_part_title"
-            android:icon="@drawable/ic_settings_device">
-            <intent android:action="android.intent.action.MAIN"/>
-        </Preference>
 </PreferenceScreen>

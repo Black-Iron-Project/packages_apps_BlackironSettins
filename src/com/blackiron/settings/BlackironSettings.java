@@ -37,22 +37,6 @@ public class BlackironSettings extends SettingsPreferenceFragment {
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
         addPreferencesFromResource(R.xml.blackiron_settings);
-
-        final String KEY_DEVICE_PART = "device_part";
-        boolean packageInstalled = false;
-
-        // DeviceParts
-        String[] targetPackage = getResources().getStringArray(R.array.targetPackage);
-        String[] targetClass = getResources().getStringArray(R.array.targetClass);
-        Intent intentPref = getPreferenceScreen().findPreference(KEY_DEVICE_PART).getIntent();
-        for (int i=0; i < targetPackage.length; i++)
-        {
-            if (Utils.isPackageInstalled(getActivity(), targetPackage[i])) {
-                packageInstalled = true;
-                intentPref.setClassName(targetPackage[i], targetClass[i]);
-            }
-        }
-        if (!packageInstalled) getPreferenceScreen().removePreference(findPreference(KEY_DEVICE_PART));
     }
 
     @Override
