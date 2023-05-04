@@ -22,7 +22,7 @@
             android:key="statusbar_category"
             android:title="@string/statusbar_title"
             android:fragment="com.blackiron.settings.fragments.StatusBarSettings" 
-            android:icon="@drawable/ic_settings_statusbar"/>
+            android:icon="@drawable/ic_settings_statusbar_2"/>
 
         <!-- Quick Settings panel -->
         <Preference
