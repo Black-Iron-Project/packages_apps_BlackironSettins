@@ -58,4 +58,13 @@
 
     </PreferenceCategory>
 
+    <PreferenceCategory
+        android:title="@string/qs_layout">
+
+	<Preference
+        android:key="qs_tile_layout"
+        android:title="@string/qs_tile_layout_title"
+        android:summary="@string/qs_tile_layout_summary"
+        android:fragment="com.blackiron.settings.fragments.QsTileLayoutSettings" />
+    </PreferenceCategory>
 </PreferenceScreen>
