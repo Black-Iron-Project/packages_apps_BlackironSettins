@@ -28,6 +28,7 @@
     <string name="notifications_title">Notifications</string>
     <string name="theme_category">Theme</string>
     <string name="fingerprint_category">FP Sensor</string>
+    <string name="privacy_category">Privacy Indicators (Requires Restart)</string>
 
     <!-- General strings -->
     <string name="ok">OK</string>
@@ -157,4 +158,12 @@
    <!-- 4G icon -->
     <string name="show_fourg_icon_title">4G icon</string>
     <string name="show_fourg_icon_summary">Display 4G icon in signal icon instead LTE</string>
+
+    <!-- Privacy indicators -->
+    <string name="mic_camera_privacy_indicator_title">Mic and camera privacy indicator</string>
+    <string name="mic_camera_privacy_indicator_summary">Show indicator when any app uses mic or camera</string>
+    <string name="location_privacy_indicator_title">Location privacy indicator</string>
+    <string name="location_privacy_indicator_summary">Show indicator when any app uses location</string>
+    <string name="projection_privacy_indicator_title">Media projection privacy indicator</string>
+    <string name="projection_privacy_indicator_summary">Show indicator when device screen is projected</string>
 </resources>
