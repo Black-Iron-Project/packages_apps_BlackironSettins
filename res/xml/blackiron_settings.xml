@@ -74,11 +74,11 @@
             android:icon="@drawable/ic_settings_recents"/-->
 
         <!-- Notifications -->
-        <Preference
+        <!--<Preference
             android:key="notifications_category"
             android:title="@string/notifications_title"
             android:fragment="com.blackiron.settings.fragments.NotificationSettings"
-            android:icon="@drawable/ic_settings_notification"/>
+            android:icon="@drawable/ic_settings_notification"/-->
 
         <!-- Misc -->
         <Preference
