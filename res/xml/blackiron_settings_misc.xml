@@ -45,4 +45,45 @@
         android:defaultValue="false"
         settings:controller="com.android.settings.sound.IncallFeedbackPreferenceController" />
 
+    <PreferenceCategory
+        android:title="@string/theme_category">
+
+        <Preference
+            android:key="android.theme.customization.fonts"
+            android:title="@string/theme_customization_font_title"
+            android:summary="@string/theme_customization_font_summary"
+            android:fragment="com.blackiron.settings.settings.fragment.FontsPicker" />
+
+        <Preference
+            android:key="android.theme.customization.icon_pack"
+            android:title="@string/theme_customization_icon_pack_title"
+            android:summary="@string/theme_customization_icon_pack_summary"
+            android:fragment="com.blackiron.settings.settings.fragment.StatusBarIcons" />
+
+        <Preference
+            android:key="android.theme.customization.adaptive_icon_shape"
+            android:title="@string/theme_customization_icon_shape_title"
+            android:summary="@string/theme_customization_icon_shape_summary"
+            android:fragment="com.blackiron.settings.settings.fragment.IconShapes" />
+
+        <Preference
+            android:key="android.theme.customization.lockscreen_clock_font"
+            android:title="@string/theme_customization_lock_clock_title"
+            android:summary="@string/theme_customization_lock_clock_summary"
+            android:fragment="com.blackiron.settings.settings.fragment.LockClockFonts" />
+
+        <Preference
+            android:key="android.theme.customization.signal_icon"
+            android:title="@string/theme_customization_signal_icon_title"
+            android:summary="@string/theme_customization_signal_icon_summary"
+            android:fragment="com.blackiron.settings.settings.fragment.SignalIcons" />
+
+        <Preference
+            android:key="android.theme.customization.wifi_icon"
+            android:title="@string/theme_customization_wifi_icon_title"
+            android:summary="@string/theme_customization_wifi_icon_summary"
+            android:fragment="com.blackiron.settings.settings.fragment.WifiIcons" />
+
+       </PreferenceCategory>
+
 </PreferenceScreen>

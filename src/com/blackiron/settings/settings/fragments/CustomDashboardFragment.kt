@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.blackiron.settings.settings.fragment
+package com.blackiron.settings.settings.fragment;
 
 import androidx.preference.Preference
 
