@@ -73,4 +73,7 @@
     <string name="window_ignore_secure_title">Ignore window secure flags</string>
     <string name="window_ignore_secure_summary">Remove screenshot / screenrecord limits for all applications</string>
     <string name="window_ignore_secure_warning">This can be convenient in some cases but may lead to privacy leaks. After changing this toggle, you may need to restart applications for the change to take effect.</string>
+
+    <string name="search">Search</string>
+    <string name="search_apps">Search apps</string>
 </resources>
