@@ -202,4 +202,11 @@
     <string name="pulse_custom_div">Bar spacing</string>
     <string name="pulse_filled_block_size">Block size</string>
     <string name="pulse_empty_block_size">Block spacing</string>
+
+    <!-- Units -->
+    <string name="unit_milliseconds">milliseconds</string>
+    <string name="unit_percent" translatable="false">\u0025</string>
+    <string name="unit_pixels" translatable="false">dp</string>
+    <string name="unit_seconds">seconds</string>
+    <string name="unit_x1000ms" translatable="false">x1000 ms</string>
 </resources>
