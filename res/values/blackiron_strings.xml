@@ -222,4 +222,29 @@
     <string name="reticker_colored_summary">Replace reTicker background color using notification app main color</string>
     <string name="reticker_landscape_only_title">Landscape only</string>
     <string name="reticker_landscape_only_summary">Only enable reTicker when device is in landscape mode</string>
+
+    <!-- QQS brightness slider -->
+    <string name="qqs_brightness_slider_title">QQS brightness slider</string>
+    <string name="qs_brightness_slider_hide">Hide</string>
+    <string name="qs_brightness_slider_bottom">Bottom</string>
+    <string name="qs_brightness_slider_top">Top</string>
+
+    <!-- Statusbar brightness control -->
+    <string name="status_bar_brightness_control_title">Statusbar Brightness Control</string>
+    <string name="status_bar_brightness_control_summary">Adjust brightness by sliding across statusbar</string>
+
+    <!-- Quick Settings brightness slider -->
+    <string name="qs_show_brightness_slider_title">Brightness slider</string>
+    <string name="qs_show_brightness_slider_never">Never show</string>
+    <string name="qs_show_brightness_slider_expanded">Show when expanded</string>
+    <string name="qs_show_brightness_slider_always">Show always</string>
+    <string name="qs_show_brightness_slider_not_expanded">Show when not expanded</string>
+    <string name="qs_brightness_slider_position_title">Position</string>
+    <string name="qs_brightness_slider_position_top">Top</string>
+    <string name="qs_brightness_slider_position_bottom">Bottom</string>
+    <string name="default_string">Default</string>
+
+    <!-- Quick Settings brightness icon -->
+    <string name="qs_show_auto_brightness_title">Auto brightness icon</string>
+    <string name="qs_show_auto_brightness_summary">Show toggle for adaptive brightness near the slider</string>
 </resources>
