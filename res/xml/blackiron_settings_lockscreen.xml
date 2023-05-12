@@ -57,6 +57,13 @@
             android:title="@string/lockscreen_media_art_title"
             android:defaultValue="false" />
 
+		<!-- Pulse music visualizer -->
+        <Preference
+            android:key="pulse_settings"
+            android:title="@string/pulse_settings"
+            android:summary="@string/pulse_settings_summary"
+            android:fragment="com.blackiron.settings.fragments.PulseSettings" />
+
       <com.android.settings.custom.preference.SystemSettingSwitchPreference
         android:key="lockscreen_power_menu_disabled"
         android:title="@string/lockscreen_power_menu_disabled_title"
