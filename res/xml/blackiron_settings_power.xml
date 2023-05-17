@@ -24,4 +24,21 @@
            android:summary="@string/advanced_reboot_summary"
            android:defaultValue="false" />
 
+        <Preference
+            android:key="gesture_power_menu_summary"
+            android:title="@string/power_menu_setting_name"
+            android:fragment="com.android.settings.gestures.PowerMenuSettings" />
+
+        <SwitchPreference
+            android:key="power_end_call"
+            android:title="@string/power_end_call_title"
+            android:summary="@string/power_end_call_summary"
+            android:persistent="false"/>
+
+        <Preference
+            android:key="torch_long_press_power_gesture"
+            android:title="@string/power_button_torch_title"
+            android:summary="@string/power_button_torch_summary"
+            android:fragment="com.android.settings.gestures.PowerButtonTorchSettings" />
+
 </PreferenceScreen>
