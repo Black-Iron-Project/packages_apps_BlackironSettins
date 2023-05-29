@@ -69,6 +69,17 @@
             android:summary="@string/pulse_settings_summary"
             android:fragment="com.blackiron.settings.fragments.PulseSettings" />
 
+    <!-- Lock screen clock top margin settings -->
+    <com.blackiron.settings.preferences.SecureSettingSeekBarPreference
+        android:key="kg_custom_clock_top_margin"
+        android:icon="@drawable/ic_lock_clock"
+        android:title="@string/kg_custom_clock_top_margin_title"
+        android:max="500"
+        settings:min="80"
+        settings:interval="1"
+        android:defaultValue="280"
+        settings:units="dp" />
+
       <com.android.settings.custom.preference.SystemSettingSwitchPreference
         android:key="lockscreen_power_menu_disabled"
         android:title="@string/lockscreen_power_menu_disabled_title"
