@@ -14,42 +14,42 @@
     <!-- App Title -->
     <string name="blackiron_settings_title">Black Iron Settings</string>
     <!-- Categories -->
-    <string name="button_title">Buttons</string>
-    <string name="gestures_title">Gestures</string>
-    <string name="lockscreen_title">Lock screen</string>
-    <string name="misc_title">Miscellaneous</string>
-    <string name="navbar_title">Navigation bar</string>
-    <string name="powermenu_title">Power menu</string>
-    <string name="quicksettings_title">Quick Settings</string>
-    <string name="recents_title">Recents apps</string>
-    <string name="statusbar_title">Status bar</string>
-    <string name="volume_title">Volume rockers</string>
-    <string name="notifications_title">Notifications</string>
-    <string name="theme_category">Theme</string>
-    <string name="fingerprint_category">FP Sensor</string>
-    <string name="privacy_category">Privacy Indicators (Requires Restart)</string>
+    <string name="button_title">Pulsanti</string>
+    <string name="gestures_title">Gesti</string>
+    <string name="lockscreen_title">Schermata di blocco</string>
+    <string name="misc_title">Varie</string>
+    <string name="navbar_title">Barra di navigazione</string>
+    <string name="powermenu_title">Menu di accensione</string>
+    <string name="quicksettings_title">Impostazioni Rapide</string>
+    <string name="recents_title">App recenti</string>
+    <string name="statusbar_title">Barra di stato</string>
+    <string name="volume_title">Pulsanti del volume</string>
+    <string name="notifications_title">Notifiche</string>
+    <string name="theme_category">Tema</string>
+    <string name="fingerprint_category">Sensore FP</string>
+    <string name="privacy_category">Indicatori Di Privacy (Richiede Riavvio)</string>
     <!-- General strings -->
     <string name="ok">OK</string>
-    <string name="reset">Reset</string>
-    <string name="cancel">Cancel</string>
-    <string name="save">Save</string>
-    <string name="misc_category">Misc Settings</string>
-    <string name="enable">Enable</string>
+    <string name="reset">Resetta</string>
+    <string name="cancel">Annulla</string>
+    <string name="save">Salva</string>
+    <string name="misc_category">Impostazioni Varie</string>
+    <string name="enable">Attiva</string>
     <!-- Color Picker -->
-    <string name="dialog_color_picker">Color Picker</string>
-    <string name="press_color_to_apply">Press on color below to apply</string>
+    <string name="dialog_color_picker">Selettore dei colori</string>
+    <string name="press_color_to_apply">Tocca un colore qui sotto per applicarlo</string>
     <string name="arrow_right">→</string>
     <string name="arrow_down">↓</string>
-    <string name="hex">Hex:</string>
+    <string name="hex">Esadecimale:</string>
     <string name="hex_hint">#ff000000</string>
-    <string name="set">Set</string>
-    <string name="color_default">Default</string>
+    <string name="set">Imposta</string>
+    <string name="color_default">Predefinito</string>
     <!-- Navbar options -->
-    <string name="navbar_invert_layout_title">Invert layout</string>
+    <string name="navbar_invert_layout_title">Inverti il layout</string>
     <string name="radio_info_title">Radio info</string>
     <!-- Haptic gesture settings -->
-    <string name="back_gesture_haptic_title">Haptic feedback</string>
-    <string name="back_gesture_haptic_summary">Enable haptic tick effect on back gesture</string>
+    <string name="back_gesture_haptic_title">Feedback tattile</string>
+    <string name="back_gesture_haptic_summary">Attiva il feedback aptico sul gesto indietro</string>
     <!-- Wi-Fi Standard icon -->
     <string name="show_wifi_standard_icon_title">Show Wi-Fi type icon</string>
     <string name="show_wifi_standard_icon_summary">Show Wi-Fi type in Wi-Fi signal indicator</string>
