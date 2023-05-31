@@ -12,7 +12,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- App Title -->
-    <string name="blackiron_settings_title">Black Iron Settings</string>
+    <string name="blackiron_settings_title">Impostazioni Black Iron</string>
     <!-- Categories -->
     <string name="button_title">Pulsanti</string>
     <string name="gestures_title">Gesti</string>
@@ -21,12 +21,12 @@
     <string name="navbar_title">Barra di navigazione</string>
     <string name="powermenu_title">Menu di accensione</string>
     <string name="quicksettings_title">Impostazioni Rapide</string>
-    <string name="recents_title">App recenti</string>
+    <string name="recents_title">App Recenti</string>
     <string name="statusbar_title">Barra di stato</string>
     <string name="volume_title">Pulsanti del volume</string>
     <string name="notifications_title">Notifiche</string>
     <string name="theme_category">Tema</string>
-    <string name="fingerprint_category">Sensore FP</string>
+    <string name="fingerprint_category">Sensore Impronte</string>
     <string name="privacy_category">Indicatori Di Privacy (Richiede Riavvio)</string>
     <!-- General strings -->
     <string name="ok">OK</string>
@@ -135,7 +135,7 @@
     <string name="show_fourg_icon_summary">Visualizzare l\'icona 4G invece di LTE</string>
     <!-- Privacy indicators -->
     <string name="mic_camera_privacy_indicator_title">Indicatore privacy microfono e fotocamera</string>
-    <string name="mic_camera_privacy_indicator_summary">Mostra un indicatore separato quando qualsiasi app utilizza microfono o fotocamera</string>
+    <string name="mic_camera_privacy_indicator_summary">Mostra un indicatore separato quando una app utilizza microfono o fotocamera</string>
     <string name="location_privacy_indicator_title">Indicatore di privacy della posizione</string>
     <string name="location_privacy_indicator_summary">Mostra un indicatore quando un\'app utilizza la posizione</string>
     <string name="projection_privacy_indicator_title">Indicatore privacy proiezione media</string>
@@ -145,7 +145,7 @@
     <string name="lockscreen_battery_info_summary">Mostra la corrente di carica, la tensione, il wattaggio e la temperatura della batteria sulla schermata di blocco durante la carica</string>
     <!-- Pulse music visualizer -->
     <string name="pulse_help_policy_notice_title">Informazioni su Pulse</string>
-    <string name="pulse_help_policy_notice_summary">Pulse è un brillante equalizzatore grafico audio quando la musica viene riprodotta sul dispositivo</string>
+    <string name="pulse_help_policy_notice_summary">Pulse è un equalizzatore grafico audio, utilizzato quando la musica viene riprodotta sul dispositivo</string>
     <string name="pulse_settings">Equalizzatore</string>
     <string name="pulse_settings_summary">Equalizzatore grafico audio per la barra di navigazione e schermata di blocco</string>
     <string name="show_navbar_pulse_title">Barra di navigazione Pulse</string>
@@ -155,18 +155,18 @@
     <string name="show_ambient_pulse_title">Pulse in Ambient display</string>
     <string name="show_ambient_pulse_summary">Equalizzatore grafico audio su Ambient display</string>
     <string name="pulse_render_mode_title">Modalità di rendering</string>
-    <string name="pulse_render_mode_fading_bars">Blocchi in dissolvenza</string>
-    <string name="pulse_render_mode_solid_lines">Linee solide</string>
+    <string name="pulse_render_mode_fading_bars">Barre in dissolvenza</string>
+    <string name="pulse_render_mode_solid_lines">Barre solide</string>
     <string name="pulse_legacy_mode_advanced_category">Impostazioni della modalità blocchi in dissolvenza</string>
     <string name="pulse_custom_fudge_factor">Livello di sanità</string>
-    <string name="pulse_lavalamp_speed_title">Velocità della lampada lavica</string>
+    <string name="pulse_lavalamp_speed_title">Velocità della lava lamp</string>
     <string name="pulse_solid_units_count">Conteggio linee solide</string>
     <string name="pulse_solid_units_opacity">Opacità delle linee solide</string>
     <string name="pulse_solid_dimen_category">Impostazioni della modalità linee solide</string>
     <string name="pulse_color_mode_title">Colore</string>
     <string name="pulse_color_accent">Accento</string>
     <string name="pulse_color_custom">Personalizzato</string>
-    <string name="pulse_color_lava_lamp">Lampada a lava</string>
+    <string name="pulse_color_lava_lamp">Lava lamp</string>
     <string name="pulse_color_user_title">Scegli il colore</string>
     <string name="pulse_smoothing_enabled_title">Attiva fluidità</string>
     <string name="pulse_smoothing_enabled_summary">Ogni barra è animata in modo più fluido</string>
@@ -185,7 +185,7 @@
     <string name="reticker_summary">Sostituisci le notifiche con una versione ridisegnata dei tickers. \nMinimale e meno invasivo di una notifica standard</string>
     <string name="reticker_colored_title">Usa colore dell\'app per lo sfondo dei ticker</string>
     <string name="reticker_colored_summary">Sostituisci il colore di sfondo di reTicker usando il colore principale dell\'app di notifica</string>
-    <string name="reticker_landscape_only_title">Solo landscape</string>
+    <string name="reticker_landscape_only_title">Solo orizzontale</string>
     <string name="reticker_landscape_only_summary">Abilita reTicker solo quando il dispositivo è in modalità orizzontale</string>
     <!-- QQS brightness slider -->
     <string name="qqs_brightness_slider_title">Cursore luminosità nelle impostazioni rapide</string>
