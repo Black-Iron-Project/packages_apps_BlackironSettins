@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2016 Black Iron
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- App Title -->
+    <string name="blackiron_settings_title">Black Iron Settings</string>
+    <!-- Categories -->
+    <string name="button_title">Pulsanti</string>
+    <string name="gestures_title">Gesti</string>
+    <string name="lockscreen_title">Schermata di blocco</string>
+    <string name="misc_title">Varie</string>
+    <string name="navbar_title">Barra di navigazione</string>
+    <string name="powermenu_title">Menu di accensione</string>
+    <string name="quicksettings_title">Impostazioni Rapide</string>
+    <string name="recents_title">App recenti</string>
+    <string name="statusbar_title">Barra di stato</string>
+    <string name="volume_title">Pulsanti del volume</string>
+    <string name="notifications_title">Notifiche</string>
+    <string name="theme_category">Tema</string>
+    <string name="fingerprint_category">Sensore FP</string>
+    <string name="privacy_category">Indicatori Di Privacy (Richiede Riavvio)</string>
+    <!-- General strings -->
+    <string name="ok">OK</string>
+    <string name="reset">Resetta</string>
+    <string name="cancel">Annulla</string>
+    <string name="save">Salva</string>
+    <string name="misc_category">Impostazioni Varie</string>
+    <string name="enable">Attiva</string>
+    <!-- Color Picker -->
+    <string name="dialog_color_picker">Selettore dei colori</string>
+    <string name="press_color_to_apply">Tocca un colore qui sotto per applicarlo</string>
+    <string name="arrow_right">→</string>
+    <string name="arrow_down">↓</string>
+    <string name="hex">Esadecimale:</string>
+    <string name="hex_hint">#ff000000</string>
+    <string name="set">Imposta</string>
+    <string name="color_default">Predefinito</string>
+    <!-- Navbar options -->
+    <string name="navbar_invert_layout_title">Inverti il layout</string>
+    <string name="radio_info_title">Radio info</string>
+    <!-- Haptic gesture settings -->
+    <string name="back_gesture_haptic_title">Feedback tattile</string>
+    <string name="back_gesture_haptic_summary">Attiva il feedback aptico sul gesto indietro</string>
+    <!-- Wi-Fi Standard icon -->
+    <string name="show_wifi_standard_icon_title">Mostra tipologia Wi-Fi nell\'icona</string>
+    <string name="show_wifi_standard_icon_summary">Mostra il tipo di Wi-Fi nell\'indicatore del segnale Wi-Fi</string>
+    <!-- Notification count -->
+    <string name="status_bar_notif_count_title">Mostra contatore notifiche</string>
+    <string name="status_bar_notif_count_summary">Visualizza il numero di notifiche in sospeso</string>
+    <!-- Statusbar colored icons -->
+    <string name="statusbar_colored_icons_title">Icone colorate</string>
+    <string name="statusbar_colored_icons_summary">Usa le icone delle app per la notifica nella barra di stato</string>
+    <!-- Ignore secure flag -->
+    <string name="window_ignore_secure_title">Ignora flag di sicurezza</string>
+    <string name="window_ignore_secure_summary">Rimuovi limiti screenshot / screenrecord per tutte le applicazioni</string>
+    <string name="window_ignore_secure_warning">Questo può essere conveniente in alcuni casi, ma può portare a perdite di privacy. Dopo aver cambiato questa opzione, potrebbe essere necessario riavviare le applicazioni perché la modifica abbia effetto.</string>
+    <string name="search">Cerca</string>
+    <string name="search_apps">Cerca App</string>
+    <!-- Themes customization -->
+    <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the settings category for theme overlays. -->
+    <string name="theme_customization_category">Temi</string>
+    <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize the adaptive icon shape (e.g. launcher and quick settings icons). -->
+    <string name="theme_customization_icon_shape_title">Forma icona</string>
+    <string name="theme_customization_icon_shape_summary">Imposta lo stile della forma dell\'icona di sistema</string>
+    <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize headline and body fonts. -->
+    <string name="theme_customization_font_title">Font titoli / paragrafi</string>
+    <string name="theme_customization_font_summary">Imposta lo stile del carattere di sistema</string>
+    <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize the system wide icon pack. -->
+    <string name="theme_customization_icon_pack_title">Pacchetto icone</string>
+    <string name="theme_customization_icon_pack_summary">Imposta lo stile personalizzato del pacchetto icone</string>
+    <!-- Custom Signal bar icons -->
+    <string name="theme_customization_signal_icon_title">Stile icona segnale</string>
+    <string name="theme_customization_signal_icon_summary">Imposta lo stile dell\'icona del segnale personalizzato</string>
+    <!-- Custom Wi-Fi bar icons -->
+    <string name="theme_customization_wifi_icon_title">Stile icona Wi-Fi</string>
+    <string name="theme_customization_wifi_icon_summary">Imposta un\'icona del WiFi personalizzata</string>
+    <string name="theme_customization_navbar_title">Stile della barra di navigazione</string>
+    <string name="theme_customization_navbar_summary">Imposta lo stile personalizzato della barra di navigazione</string>
+    <!-- Custom Fonts -->
+    <string name="theme_customization_lock_clock_title">Carattere orologio schermata di blocco</string>
+    <string name="theme_customization_lock_clock_summary">Imposta lo stile del carattere dell\'orologio della lockscreen</string>
+    <!-- Udfps animations -->
+    <string name="udfps_category">Udfps</string>
+    <!-- Screen off FOD -->
+    <string name="screen_off_fod_title">Impronta digitale a schermo spento</string>
+    <string name="screen_off_fod_summary">Mantieni abilitata l\'impronta digitale quando lo schermo è spento</string>
+    <!-- UDFPS settings -->
+    <string name="udfps_settings_title">Personalizzazione UDFPS</string>
+    <string name="udfps_settings_summary">Personalizza lo scanner d\'impronte digitali sotto il display</string>
+    <string name="udfps_icon_picker_title">Scegli l\'icona UDFPS</string>
+    <string name="udfps_icon_picker_summary">Scegli l\'icona dell\'impronta digitale preferita</string>
+    <string name="udfps_recog_animation_effect_title">Effetto animazione UDFPS</string>
+    <string name="udfps_recog_animation_effect_summary">Scegli l\'effetto dell\'animazione</string>
+    <!-- Custom FOD Icon -->
+    <string name="custom_fp_icon_title">Icona personalizzata UDFPS</string>
+    <string name="custom_fp_icon_summary">Abilita l\'icona UDFPS personalizzata da file</string>
+    <string name="custom_fp_select_title">Selezionare l\'icona UDFPS personalizzata</string>
+    <string name="custom_fp_select_summary">Selezionare un\'immagine personalizzata dai file salvati o dalla galleria - Non usare Google Foto</string>
+    <!-- Old mobile type icons -->
+    <string name="use_old_mobiletype_title">Icona rete dati piccola</string>
+    <string name="use_old_mobiletype_summary">Mostra l\'icona rete dati sopra l\'indicatore di segnale</string>
+    <!-- Fingerprint authentication vibration -->
+    <string name="fprint_sucess_vib_title">Vibrazione all\'autenticazione riuscita con impronta digitale</string>
+    <string name="fprint_sucess_vib_summary">Vibra all\'avvenuta autenticazione tramite impronta digitale</string>
+    <string name="fprint_error_vib_title">Vibrazione all\'errore lettore d\'impronta</string>
+    <string name="fprint_error_vib_summary">Vibra all\'autenticazione fallita tramite impronta digitale</string>
+    <!-- Power menu on lockscreen -->
+    <string name="lockscreen_power_menu_disabled_title">Disattiva il menu di alimentazione dalla schermata di blocco</string>
+    <string name="lockscreen_power_menu_disabled_summary">Questa opzione disabiliterà il menù alimentazione solo dalle schermate di blocco con metodo di sicurezza impostato</string>
+    <!-- QS tiles layout -->
+    <string name="qs_layout">Disposizione tile impostazioni rapide</string>
+    <string name="qs_tile_layout_title">Disposizione tile impostazioni rapide</string>
+    <string name="qs_tile_layout_summary">Personalizza la disposizione dei tile nel pannello impostazioni rapide</string>
+    <string name="qs_tiles_layout_category">Disposizione dei tile</string>
+    <string name="qs_rows_portrait_title">Righe (verticale)</string>
+    <string name="qqs_rows_portrait_title">Righe (Verticale compatto)</string>
+    <string name="qs_columns_portrait_title">Colonne (verticale)</string>
+    <string name="qs_apply_change_button_title">Applica le modifiche</string>
+    <string name="qs_apply_change_failed">Impossibile applicare le modifiche</string>
+    <string name="qs_tile_hide_label_title">Nascondi etichette</string>
+    <string name="qs_tile_hide_label_summary">Mostra solo icona per i tile</string>
+    <string name="qs_tile_vertical_layout_title">Disposizione verticale</string>
+    <string name="qs_tile_vertical_layout_summary">Abilita la disposizione verticale per i tiles delle impostazioni rapide</string>
+    <!-- 4G icon -->
+    <string name="show_fourg_icon_title">Icona 4G</string>
+    <string name="show_fourg_icon_summary">Visualizzare l\'icona 4G invece di LTE</string>
+    <!-- Privacy indicators -->
+    <string name="mic_camera_privacy_indicator_title">Indicatore privacy microfono e fotocamera</string>
+    <string name="mic_camera_privacy_indicator_summary">Mostra un indicatore separato quando qualsiasi app utilizza microfono o fotocamera</string>
+    <string name="location_privacy_indicator_title">Indicatore di privacy della posizione</string>
+    <string name="location_privacy_indicator_summary">Mostra un indicatore quando un\'app utilizza la posizione</string>
+    <string name="projection_privacy_indicator_title">Indicatore privacy proiezione media</string>
+    <string name="projection_privacy_indicator_summary">Mostra un indicatore quando lo schermo del dispositivo è proiettato</string>
+    <!-- Lockscreen battery info indicator  -->
+    <string name="lockscreen_battery_info_title">Informazioni di ricarica sulla schermata di blocco</string>
+    <string name="lockscreen_battery_info_summary">Mostra la corrente di carica, la tensione, il wattaggio e la temperatura della batteria sulla schermata di blocco durante la carica</string>
+    <!-- Pulse music visualizer -->
+    <string name="pulse_help_policy_notice_title">Informazioni su Pulse</string>
+    <string name="pulse_help_policy_notice_summary">Pulse è un brillante equalizzatore grafico audio quando la musica viene riprodotta sul dispositivo</string>
+    <string name="pulse_settings">Equalizzatore</string>
+    <string name="pulse_settings_summary">Equalizzatore grafico audio per la barra di navigazione e schermata di blocco</string>
+    <string name="show_navbar_pulse_title">Barra di navigazione Pulse</string>
+    <string name="show_navbar_pulse_summary">Equalizzatore grafico audio sulla barra di navigazione</string>
+    <string name="show_lockscreen_pulse_title">Pulse nella schermata di blocco</string>
+    <string name="show_lockscreen_pulse_summary">Equalizzatore grafico audio sulla schermata di blocco</string>
+    <string name="show_ambient_pulse_title">Pulse in Ambient display</string>
+    <string name="show_ambient_pulse_summary">Equalizzatore grafico audio su Ambient display</string>
+    <string name="pulse_render_mode_title">Modalità di rendering</string>
+    <string name="pulse_render_mode_fading_bars">Blocchi in dissolvenza</string>
+    <string name="pulse_render_mode_solid_lines">Linee solide</string>
+    <string name="pulse_legacy_mode_advanced_category">Impostazioni della modalità blocchi in dissolvenza</string>
+    <string name="pulse_custom_fudge_factor">Livello di sanità</string>
+    <string name="pulse_lavalamp_speed_title">Velocità della lampada lavica</string>
+    <string name="pulse_solid_units_count">Conteggio linee solide</string>
+    <string name="pulse_solid_units_opacity">Opacità delle linee solide</string>
+    <string name="pulse_solid_dimen_category">Impostazioni della modalità linee solide</string>
+    <string name="pulse_color_mode_title">Colore</string>
+    <string name="pulse_color_accent">Accento</string>
+    <string name="pulse_color_custom">Personalizzato</string>
+    <string name="pulse_color_lava_lamp">Lampada a lava</string>
+    <string name="pulse_color_user_title">Scegli il colore</string>
+    <string name="pulse_smoothing_enabled_title">Attiva fluidità</string>
+    <string name="pulse_smoothing_enabled_summary">Ogni barra è animata in modo più fluido</string>
+    <string name="pulse_custom_dimen">Spessore barra</string>
+    <string name="pulse_custom_div">Spazio barra</string>
+    <string name="pulse_filled_block_size">Dimensione del blocco</string>
+    <string name="pulse_empty_block_size">Spaziatura tra i blocchi</string>
+    <!-- Units -->
+    <string name="unit_milliseconds">millisecondi</string>
+    <string name="unit_seconds">secondi</string>
+    <!-- Fingerprint Ripple Effect -->
+    <string name="enable_fingerprint_ripple_effect_title">Effetto increspatura</string>
+    <string name="enable_fingerprint_ripple_effect_summary">Mostra l\'effetto increspatura sullo sblocco con l\'impronta digitale</string>
+    <!-- reTicker -->
+    <string name="reticker_title">reTicker\nRichiede riavvio SystemUI</string>
+    <string name="reticker_summary">Sostituisci le notifiche con una versione ridisegnata dei tickers. \nMinimale e meno invasivo di una notifica standard</string>
+    <string name="reticker_colored_title">Usa colore dell\'app per lo sfondo dei ticker</string>
+    <string name="reticker_colored_summary">Sostituisci il colore di sfondo di reTicker usando il colore principale dell\'app di notifica</string>
+    <string name="reticker_landscape_only_title">Solo landscape</string>
+    <string name="reticker_landscape_only_summary">Abilita reTicker solo quando il dispositivo è in modalità orizzontale</string>
+    <!-- QQS brightness slider -->
+    <string name="qqs_brightness_slider_title">Cursore luminosità nelle impostazioni rapide</string>
+    <string name="qs_brightness_slider_hide">Nascondi</string>
+    <string name="qs_brightness_slider_bottom">In Basso</string>
+    <string name="qs_brightness_slider_top">In Alto</string>
+    <!-- Statusbar brightness control -->
+    <string name="status_bar_brightness_control_title">Cursore luminosità sulla barra di stato</string>
+    <string name="status_bar_brightness_control_summary">Regola la luminosità scorrendo il dito sulla barra di stato</string>
+    <!-- Quick Settings brightness slider -->
+    <string name="qs_show_brightness_slider_title">Cursore della luminosità</string>
+    <string name="qs_show_brightness_slider_never">Non mostrare mai</string>
+    <string name="qs_show_brightness_slider_expanded">Mostra quando esteso</string>
+    <string name="qs_show_brightness_slider_always">Visualizza sempre</string>
+    <string name="qs_show_brightness_slider_not_expanded">Mostra quando non esteso</string>
+    <string name="qs_brightness_slider_position_title">Posizione</string>
+    <string name="qs_brightness_slider_position_top">In Alto</string>
+    <string name="qs_brightness_slider_position_bottom">In Basso</string>
+    <string name="default_string">Predefinito</string>
+    <!-- Quick Settings brightness icon -->
+    <string name="qs_show_auto_brightness_title">Icona luminosità automatica</string>
+    <string name="qs_show_auto_brightness_summary">Mostra il toggle per la luminosità adattiva vicino al cursore</string>
+</resources>
