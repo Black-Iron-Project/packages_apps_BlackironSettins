@@ -18,6 +18,12 @@
     android:title="@string/lockscreen_title"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+     <Preference
+        android:key="edge_light_preference"
+        android:title="@string/edge_light_title"
+        android:persistent="false"
+        android:fragment="com.blackiron.settings.fragments.EdgeLightSettings" />
+
     <PreferenceCategory
         android:key="lockscreen_ui_finterprint_category"
         android:title="@string/fingerprint_category">
