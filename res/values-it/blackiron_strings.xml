@@ -208,4 +208,48 @@
     <!-- Quick Settings brightness icon -->
     <string name="qs_show_auto_brightness_title">Icona luminosità automatica</string>
     <string name="qs_show_auto_brightness_summary">Mostra il toggle per la luminosità adattiva vicino al cursore</string>
+    <!-- Lockscreen Clock -->
+    <string name="kg_custom_clock_top_margin_title">Posizione orologio su due righe</string>
+    <string name="kg_small_clock_text_size_title">Dimensioni orologio piccolo nella schermata di blocco</string>
+    <string name="kg_big_clock_text_size_title">Dimensioni orologio su due righe nella schermata di blocco</string>
+    <!-- IME button space -->
+    <string name="navigation_bar_ime_space_title">Nascondi spazio per il tasto IME</string>
+    <string name="navigation_bar_ime_space_summary">Nascondi lo spazio del pulsante IME sotto la tastiera</string>
+    <!-- Brightness slider styles -->
+    <string name="brightness_slider_style_title">Stile slider luminosità</string>
+    <string name="brightness_slider_style_default">Predefinito</string>
+    <string name="brightness_slider_style_filled">Pieno</string>
+    <string name="brightness_slider_style_thin">Sottile</string>
+    <string name="brightness_slider_style_cyberpunk">Blocky Thumb</string>
+    <string name="brightness_slider_style_gradiant">Doppio Strato</string>
+    <string name="brightness_slider_style_neumorph">Neumorf</string>
+    <string name="brightness_slider_style_outline">Contorno</string>
+    <string name="brightness_slider_style_shaded">Ombreggiato</string>
+    <string name="brightness_slider_style_thinoutline">Inline</string>
+    <string name="brightness_slider_style_translucent">Trasparente</string>
+    <string name="brightness_slider_style_leafyoutline">Contorno A Foglia</string>
+    <string name="brightness_slider_style_minimalthumb">Minimal Thumb</string>
+    <string name="brightness_slider_style_oldschoolthumb">Old School Thumb</string>
+    <string name="brightness_slider_style_roundedclip">Clip arrotondato</string>
+    <string name="brightness_slider_style_thumbslider">Thumb Slider</string>
+    <string name="brightness_slider_style_line">Contorno Sottile</string>
+    <string name="brightness_slider_style_lighty">Leggero</string>
+    <!-- Quick Settings header category -->
+    <string name="header_category">Intestazione</string>
+    <string name="qs_header_image_title">Immagine d\'intestazione impostazioni rapide</string>
+    <!-- Edge light -->
+    <string name="edge_light_title">Illuminazione del bordo</string>
+    <string name="enable_edge_light">Usa illuminazione del bordo</string>
+    <string name="edge_light_intro_text">Mostra un\'animazione lungo i bordi dello schermo all\'arrivo di una notifica</string>
+    <string name="edge_light_always_trigger_on_pulse_title">Attiva ogni volta</string>
+    <string name="edge_light_always_trigger_on_pulse_summary">Indica se mostrare l\'illuminazione del bordo ogni volta che viene mostrato l\'ambient display e non solo per le notifiche</string>
+    <string name="edge_light_repeat_animation_title">Ripeti animazione</string>
+    <string name="edge_light_repeat_animation_summary_on">Ripeti fino al timeout</string>
+    <string name="edge_light_repeat_animation_summary_off">Mostra solo una volta</string>
+    <string name="edge_light_color_mode_title">Modalità colore illuminazione del bordo</string>
+    <string name="accent_color">Colore primario (predefinito)</string>
+    <string name="notification_color">Colore della notifica</string>
+    <string name="wallpaper_color">Colore dallo sfondo</string>
+    <string name="custom_color">Colore personalizzato</string>
+    <string name="edge_light_custom_color_title">Colore personalizzato</string>
 </resources>
