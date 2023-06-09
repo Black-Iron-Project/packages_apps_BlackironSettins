@@ -208,4 +208,48 @@
     <!-- Quick Settings brightness icon -->
     <string name="qs_show_auto_brightness_title">Icona luminosità automatica</string>
     <string name="qs_show_auto_brightness_summary">Mostra il toggle per la luminosità adattiva vicino al cursore</string>
+    <!-- Lockscreen Clock -->
+    <string name="kg_custom_clock_top_margin_title">Double-line clock position</string>
+    <string name="kg_small_clock_text_size_title">Small Lockscreen clock size</string>
+    <string name="kg_big_clock_text_size_title">Double-line Lockscreen clock size</string>
+    <!-- IME button space -->
+    <string name="navigation_bar_ime_space_title">Hide IME button space</string>
+    <string name="navigation_bar_ime_space_summary">Hide IME button space below keyboard</string>
+    <!-- Brightness slider styles -->
+    <string name="brightness_slider_style_title">Brightness slider style</string>
+    <string name="brightness_slider_style_default">Default</string>
+    <string name="brightness_slider_style_filled">Filled</string>
+    <string name="brightness_slider_style_thin">Thin</string>
+    <string name="brightness_slider_style_cyberpunk">Blocky Thumb</string>
+    <string name="brightness_slider_style_gradiant">Double Layer</string>
+    <string name="brightness_slider_style_neumorph">Neumorph</string>
+    <string name="brightness_slider_style_outline">Outline</string>
+    <string name="brightness_slider_style_shaded">Shaded</string>
+    <string name="brightness_slider_style_thinoutline">Inline</string>
+    <string name="brightness_slider_style_translucent">Transparent</string>
+    <string name="brightness_slider_style_leafyoutline">Leafy Outline</string>
+    <string name="brightness_slider_style_minimalthumb">Minimal Thumb</string>
+    <string name="brightness_slider_style_oldschoolthumb">Old School Thumb</string>
+    <string name="brightness_slider_style_roundedclip">Rounded clip</string>
+    <string name="brightness_slider_style_thumbslider">Thumb Slider</string>
+    <string name="brightness_slider_style_line">Thin Outline</string>
+    <string name="brightness_slider_style_lighty">Lighty</string>
+    <!-- Quick Settings header category -->
+    <string name="header_category">Header</string>
+    <string name="qs_header_image_title">QS Header Image</string>
+    <!-- Edge light -->
+    <string name="edge_light_title">Edge light</string>
+    <string name="enable_edge_light">Enable edge light</string>
+    <string name="edge_light_intro_text">Display an animation along the edges of the screen when pulsing</string>
+    <string name="edge_light_always_trigger_on_pulse_title">Always trigger on pulse</string>
+    <string name="edge_light_always_trigger_on_pulse_summary">Whether to show edge light whenever ambient display is shown and not just for notifications</string>
+    <string name="edge_light_repeat_animation_title">Repeat animation</string>
+    <string name="edge_light_repeat_animation_summary_on">Repeat until timeout</string>
+    <string name="edge_light_repeat_animation_summary_off">Show only once</string>
+    <string name="edge_light_color_mode_title">Edge light color mode</string>
+    <string name="accent_color">Accent color (Default)</string>
+    <string name="notification_color">Notification color</string>
+    <string name="wallpaper_color">Wallpaper color</string>
+    <string name="custom_color">Custom color</string>
+    <string name="edge_light_custom_color_title">Custom color</string>
 </resources>
