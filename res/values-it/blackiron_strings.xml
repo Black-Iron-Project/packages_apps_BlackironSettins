@@ -228,10 +228,10 @@
     <string name="brightness_slider_style_thinoutline">Inline</string>
     <string name="brightness_slider_style_translucent">Trasparente</string>
     <string name="brightness_slider_style_leafyoutline">Contorno A Foglia</string>
-    <string name="brightness_slider_style_minimalthumb">Minimal Thumb</string>
-    <string name="brightness_slider_style_oldschoolthumb">Old School Thumb</string>
+    <string name="brightness_slider_style_minimalthumb">Minimale</string>
+    <string name="brightness_slider_style_oldschoolthumb">Vecchia Scuola</string>
     <string name="brightness_slider_style_roundedclip">Clip arrotondato</string>
-    <string name="brightness_slider_style_thumbslider">Thumb Slider</string>
+    <string name="brightness_slider_style_thumbslider">Cursore</string>
     <string name="brightness_slider_style_line">Contorno Sottile</string>
     <string name="brightness_slider_style_lighty">Leggero</string>
     <!-- Quick Settings header category -->
