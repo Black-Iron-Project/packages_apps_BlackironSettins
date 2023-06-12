@@ -45,11 +45,11 @@
     <string name="set">Imposta</string>
     <string name="color_default">Predefinito</string>
     <!-- Navbar options -->
-    <string name="navbar_invert_layout_title">Inverti il layout</string>
-    <string name="radio_info_title">Radio info</string>
+    <string name="navbar_invert_layout_title">Inverti disposizione</string>
+    <string name="radio_info_title">Informazioni radio</string>
     <!-- Haptic gesture settings -->
-    <string name="back_gesture_haptic_title">Feedback tattile</string>
-    <string name="back_gesture_haptic_summary">Attiva il feedback aptico sul gesto indietro</string>
+    <string name="back_gesture_haptic_title">Vibrazione al tocco</string>
+    <string name="back_gesture_haptic_summary">Attiva la vibrazione su gesto Indietro</string>
     <!-- Wi-Fi Standard icon -->
     <string name="show_wifi_standard_icon_title">Mostra tipologia Wi-Fi nell\'icona</string>
     <string name="show_wifi_standard_icon_summary">Mostra il tipo di Wi-Fi nell\'indicatore del segnale Wi-Fi</string>
@@ -87,9 +87,9 @@
     <string name="theme_customization_navbar_summary">Imposta lo stile personalizzato della barra di navigazione</string>
     <!-- Custom Fonts -->
     <string name="theme_customization_lock_clock_title">Carattere orologio schermata di blocco</string>
-    <string name="theme_customization_lock_clock_summary">Imposta lo stile del carattere dell\'orologio della lockscreen</string>
+    <string name="theme_customization_lock_clock_summary">Stile carattere orologio nella schermata di blocco</string>
     <!-- Udfps animations -->
-    <string name="udfps_category">Udfps</string>
+    <string name="udfps_category">Udfps - Sensore impronte sotto schermo</string>
     <!-- Screen off FOD -->
     <string name="screen_off_fod_title">Impronta digitale a schermo spento</string>
     <string name="screen_off_fod_summary">Mantieni abilitata l\'impronta digitale quando lo schermo è spento</string>
@@ -181,7 +181,7 @@
     <string name="enable_fingerprint_ripple_effect_title">Effetto increspatura</string>
     <string name="enable_fingerprint_ripple_effect_summary">Mostra l\'effetto increspatura sullo sblocco con l\'impronta digitale</string>
     <!-- reTicker -->
-    <string name="reticker_title">reTicker\nRichiede riavvio SystemUI</string>
+    <string name="reticker_title">reTicker\nRichiede il riavvio dell\'interfaccia utente</string>
     <string name="reticker_summary">Sostituisci le notifiche con una versione ridisegnata dei tickers. \nMinimale e meno invasivo di una notifica standard</string>
     <string name="reticker_colored_title">Usa colore dell\'app per lo sfondo dei ticker</string>
     <string name="reticker_colored_summary">Sostituisci il colore di sfondo di reTicker usando il colore principale dell\'app di notifica</string>
@@ -216,7 +216,7 @@
     <string name="navigation_bar_ime_space_title">Nascondi spazio per il tasto IME</string>
     <string name="navigation_bar_ime_space_summary">Nascondi lo spazio del pulsante IME sotto la tastiera</string>
     <!-- Brightness slider styles -->
-    <string name="brightness_slider_style_title">Stile slider luminosità</string>
+    <string name="brightness_slider_style_title">Stile cursore luminosità</string>
     <string name="brightness_slider_style_default">Predefinito</string>
     <string name="brightness_slider_style_filled">Pieno</string>
     <string name="brightness_slider_style_thin">Sottile</string>
@@ -225,13 +225,13 @@
     <string name="brightness_slider_style_neumorph">Neumorf</string>
     <string name="brightness_slider_style_outline">Contorno</string>
     <string name="brightness_slider_style_shaded">Ombreggiato</string>
-    <string name="brightness_slider_style_thinoutline">Inline</string>
+    <string name="brightness_slider_style_thinoutline">In linea</string>
     <string name="brightness_slider_style_translucent">Trasparente</string>
     <string name="brightness_slider_style_leafyoutline">Contorno A Foglia</string>
-    <string name="brightness_slider_style_minimalthumb">Minimal Thumb</string>
-    <string name="brightness_slider_style_oldschoolthumb">Old School Thumb</string>
+    <string name="brightness_slider_style_minimalthumb">Minimale</string>
+    <string name="brightness_slider_style_oldschoolthumb">Vecchia Scuola</string>
     <string name="brightness_slider_style_roundedclip">Clip arrotondato</string>
-    <string name="brightness_slider_style_thumbslider">Thumb Slider</string>
+    <string name="brightness_slider_style_thumbslider">Cursore</string>
     <string name="brightness_slider_style_line">Contorno Sottile</string>
     <string name="brightness_slider_style_lighty">Leggero</string>
     <!-- Quick Settings header category -->
