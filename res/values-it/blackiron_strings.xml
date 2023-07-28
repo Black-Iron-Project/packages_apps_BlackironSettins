@@ -177,9 +177,6 @@
     <!-- Units -->
     <string name="unit_milliseconds">millisecondi</string>
     <string name="unit_seconds">secondi</string>
-    <!-- Fingerprint Ripple Effect -->
-    <string name="enable_fingerprint_ripple_effect_title">Effetto increspatura</string>
-    <string name="enable_fingerprint_ripple_effect_summary">Mostra l\'effetto increspatura sullo sblocco con l\'impronta digitale</string>
     <!-- reTicker -->
     <string name="reticker_title">reTicker\nRichiede il riavvio dell\'interfaccia utente</string>
     <string name="reticker_summary">Sostituisci le notifiche con una versione ridisegnata dei tickers. \nMinimale e meno invasivo di una notifica standard</string>
