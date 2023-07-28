@@ -206,10 +206,6 @@
     <string name="unit_seconds">seconds</string>
     <string name="unit_x1000ms" translatable="false">x1000 ms</string>
 
-    <!-- Fingerprint Ripple Effect -->
-    <string name="enable_fingerprint_ripple_effect_title">Ripple effect</string>
-    <string name="enable_fingerprint_ripple_effect_summary">Show ripple effect on unlock with fingerprint</string>
-
     <!-- reTicker -->
     <string name="reticker_category" translatable="false">reTicker</string>
     <string name="reticker_title">reTicker\nRequires SystemUI restart</string>

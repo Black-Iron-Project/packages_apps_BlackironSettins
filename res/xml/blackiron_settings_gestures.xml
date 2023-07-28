@@ -21,18 +21,13 @@
  <PreferenceCategory
         android:title="@string/misc_category">
 
-       <Preference
+    <Preference
         android:key="double_tap"
         android:fragment="com.android.settings.gestures.DoubleTapAmbientSettings"
         android:title="@string/double_tap_title"
         android:summary="@string/doze_double_tap_summary"
         settings:userRestriction="no_ambient_display"
         settings:controller="com.android.settings.gestures.DoubleTapAmbientPreferenceController" />
-
-	<SwitchPreference
-            android:key="tap_to_wake"
-            android:title="@string/tap_to_wake"
-            android:summary="@string/tap_to_wake_summary"/>
 
     </PreferenceCategory>
 
