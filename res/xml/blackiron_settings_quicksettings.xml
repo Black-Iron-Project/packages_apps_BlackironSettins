@@ -61,16 +61,15 @@
 
     </PreferenceCategory>
 
-     <PreferenceCategory
-        android:key="quick_settings_header_category"
-        android:title="@string/header_category">
+    <PreferenceCategory
+        android:title="@string/qs_header_category_title">
 
         <com.blackiron.settings.preferences.SystemSettingSeekBarPreference
             android:key="qs_header_image"
             android:title="@string/qs_header_image_title"
             android:defaultValue="0"
             settings:interval="1"
-            android:max="24"
+            android:max="64"
             android:min="0" />
      </PreferenceCategory>
 
