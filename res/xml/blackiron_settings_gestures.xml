@@ -29,6 +29,14 @@
         settings:userRestriction="no_ambient_display"
         settings:controller="com.android.settings.gestures.DoubleTapAmbientPreferenceController" />
 
+        <Preference
+        android:key="gesture_settings"
+        android:title="@string/gesture_preference_title"
+        android:icon="@drawable/ic_settings_gestures"
+        android:order="-250"
+        android:fragment="com.android.settings.gestures.GestureSettings"
+        settings:controller="com.android.settings.gestures.GesturesSettingPreferenceController"/>
+
     </PreferenceCategory>
 
        <com.android.settings.custom.preference.SystemSettingSwitchPreference
