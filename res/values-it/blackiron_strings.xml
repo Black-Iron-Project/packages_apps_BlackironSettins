@@ -231,9 +231,11 @@
     <string name="brightness_slider_style_thumbslider">Cursore</string>
     <string name="brightness_slider_style_line">Contorno Sottile</string>
     <string name="brightness_slider_style_lighty">Leggero</string>
-    <!-- Quick Settings header category -->
-    <string name="header_category">Intestazione</string>
-    <string name="qs_header_image_title">Immagine d\'intestazione impostazioni rapide</string>
+    <!-- QS Header image -->
+    <string name="qs_header_category_title">QS Header</string>
+    <string name="qs_header_image_title">QS Header image</string>
+    <string name="qs_header_random_image_title">QS Header random image</string>
+    <string name="qs_header_random_image_summary">Enable random QS Header image</string>
     <!-- Edge light -->
     <string name="edge_light_title">Illuminazione del bordo</string>
     <string name="enable_edge_light">Usa illuminazione del bordo</string>
@@ -249,4 +251,7 @@
     <string name="wallpaper_color">Colore dallo sfondo</string>
     <string name="custom_color">Colore personalizzato</string>
     <string name="edge_light_custom_color_title">Colore personalizzato</string>
+    <!-- Fingerprint Ripple Effect -->
+    <string name="enable_fingerprint_ripple_effect_title">Ripple effect</string>
+    <string name="enable_fingerprint_ripple_effect_summary">Show ripple effect on unlock with fingerprint</string>
 </resources>
