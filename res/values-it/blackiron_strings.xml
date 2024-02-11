@@ -252,6 +252,6 @@
     <string name="custom_color">Colore personalizzato</string>
     <string name="edge_light_custom_color_title">Colore personalizzato</string>
     <!-- Fingerprint Ripple Effect -->
-    <string name="enable_fingerprint_ripple_effect_title">Ripple effect</string>
-    <string name="enable_fingerprint_ripple_effect_summary">Show ripple effect on unlock with fingerprint</string>
+    <string name="enable_fingerprint_ripple_effect_title">Effetto ondulazione</string>
+    <string name="enable_fingerprint_ripple_effect_summary">Mostra ondulazione allo sblocco con impronta</string>
 </resources>
