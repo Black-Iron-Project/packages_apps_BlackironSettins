@@ -48,7 +48,7 @@
         <!-- Sound -->
         <Preference
             android:key="sound_category"
-            android:title="@string/gestures_title"
+            android:title="@string/sound_title"
             android:fragment="com.blackiron.settings.fragments.Sound"
             android:icon="@drawable/ic_settings_sound"/>
 
