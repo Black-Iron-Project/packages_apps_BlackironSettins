@@ -15,7 +15,7 @@
         android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-        <com.blackiron.settings.utils.WallpaperView
+        <android.widget.WallpaperView
             android:gravity="center"
             android:orientation="vertical"
             android:background="@drawable/preview_bg"
