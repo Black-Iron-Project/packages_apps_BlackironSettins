@@ -61,7 +61,14 @@
             android:key="lockscreen_widgets_enabled"
             android:title="@string/lockscreen_widgets_enabled_title"
             android:summary="@string/lockscreen_widgets_enabled_summary"
-            android:defaultValue="true"
+            android:defaultValue="false"
+            lineage:position="solo" />
+
+        <com.blackiron.settings.preferences.SystemSettingListPreference
+            android:key="lockscreen_display_widgets"
+            android:title="@string/lockscreen_display_widgets_title"
+            android:summary="@string/lockscreen_display_widgets_summary"
+            android:defaultValue="false"
             lineage:position="solo" />
 
         <com.blackiron.settings.preferences.SystemSettingListPreference
