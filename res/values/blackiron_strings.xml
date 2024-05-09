@@ -1342,4 +1342,6 @@
     <string name="data">Data</string>
     <string name="ringer">Ringer</string>
     <string name="bt">Bluetooth</string>
+    <string name="sound_engine_title">Sound Engine</string>
+
 </resources>
