@@ -41,6 +41,7 @@ import androidx.preference.PreferenceScreen;
 import androidx.preference.Preference.OnPreferenceChangeListener;
 
 import com.android.internal.logging.nano.MetricsProto;
+import com.android.internal.util.ArrayUtils;
 import com.android.internal.util.blackiron.OmniJawsClient;
 import com.android.internal.util.blackiron.Utils;
 
@@ -101,6 +102,11 @@ public class LockScreen extends SettingsPreferenceFragment
 
         PreferenceCategory gestCategory = (PreferenceCategory) findPreference(LOCKSCREEN_GESTURES_CATEGORY);
 
+        final int[] udfpsProps = getContext().getResources().getIntArray(
+                com.android.internal.R.array.config_udfps_sensor_props);
+
+        final boolean isUdfps = !ArrayUtils.isEmpty(udfpsProps);
+
         FingerprintManager mFingerprintManager = (FingerprintManager)
                 getActivity().getSystemService(Context.FINGERPRINT_SERVICE);
         mUdfpsAnimations = (Preference) findPreference(KEY_UDFPS_ANIMATIONS);
@@ -133,6 +139,10 @@ public class LockScreen extends SettingsPreferenceFragment
             gestCategory.removePreference(mCustomFPImage);
             gestCategory.removePreference(mCustomFodIcon);
         } else {
+            if (!isUdfps) {
+                gestCategory.removePreference(mCustomFPImage);
+                gestCategory.removePreference(mCustomFodIcon);
+            }
             if (!Utils.isPackageInstalled(getContext(), "com.blackiron.udfps.animations")) {
                 gestCategory.removePreference(mUdfpsAnimations);
             }
