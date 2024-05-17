@@ -1302,4 +1302,11 @@
     <string name="custom_fp_icon_summary">Enable custom UDFPS Icon from files</string>
     <string name="custom_fp_select_title">Select Custom UDFPS Icon</string>
     <string name="custom_fp_select_summary">Select custom image from your saved files or gallery</string>
+
+
+    <!-- Status bar padding -->
+    <string name="statusbar_padding">Status bar padding</string>
+    <string name="statusbar_top_padding">Top padding</string>
+    <string name="statusbar_left_padding">Left padding</string>
+    <string name="statusbar_right_padding">Right padding</string>
 </resources>
