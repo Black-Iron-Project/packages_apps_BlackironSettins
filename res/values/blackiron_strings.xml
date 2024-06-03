@@ -20,6 +20,9 @@
     <string name="about_blackiron">About Blackiron</string>
     <string name="about_device_name">Device</string>
 
+    <!-- Apply Button --> 
+    <string name="apply_change_button_title">Apply</string>
+
     <!-- App Title -->
     <string name="blackiron_settings_title">Black Iron Settings</string>
     <string name="reset_settings_title">Reset settings</string>
