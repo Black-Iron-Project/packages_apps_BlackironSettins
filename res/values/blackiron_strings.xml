@@ -829,6 +829,14 @@
     <string name="legacy_wfd_video_mode_1080p_30fps" translatable="false">1080p 30fps</string>
     <string name="legacy_wfd_video_mode_1080p_60fps" translatable="false">1080p 60fps</string>
 
+    <!-- UDFPS settings -->
+    <string name="udfps_settings_title">UDFPS customization</string>
+    <string name="udfps_settings_summary">Customize under-display fingerprint scanner</string>
+    <string name="udfps_icon_picker_title">UDFPS icon picker</string>
+    <string name="udfps_icon_picker_summary">Choose your favorite fingerprint icon</string>
+    <string name="udfps_recog_animation_effect_title">UDFPS custom animation</string>
+    <string name="udfps_recog_animation_effect_summary">Choose animation effect</string>
+
     <!-- Face Unlock -->
     <string name="security_settings_face_unlock_redo_face_scan_summary">Remove existing face scan and create a new scan</string>
     <string name="security_settings_face_unlock_redo_face_scan_title">Redo face scan</string>
@@ -1266,18 +1274,6 @@
     <!-- IME Space -->
     <string name="navigation_bar_ime_space_title">IME space</string>
     <string name="navigation_bar_ime_space_summary">Add space below keyboard when navigation hint is disabled</string>
-
-    <!-- UDFPS settings -->
-    <string name="udfps_category">UDFPS</string>
-    <string name="udfps_customization">UDFPS customization</string>
-    <string name="udfps_recog_animation">UDFPS animation</string>
-    <string name="udfps_recog_animation_summary">Shows an animation while reading your finger</string>
-    <string name="udfps_recog_animation_effect_title">UDFPS custom animation</string>
-    <string name="udfps_recog_animation_effect_summary">Choose animation effect</string>
-    <string name="udfps_settings_title">UDFPS settings</string>
-    <string name="udfps_settings_summary">Settings for customizing the UDFPS</string>
-    <string name="udfps_icon_picker_title">UDFPS icon picker</string>
-    <string name="udfps_icon_picker_summary">Choose your favorite fingerprint icon</string>
 
     <!-- QS Bluetooth auto on -->
     <string name="qs_bt_auto_on_title">Automatic Bluetooth on</string>

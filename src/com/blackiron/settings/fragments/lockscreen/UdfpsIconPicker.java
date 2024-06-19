@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.blackiron.settings.fragments.udfps;
+package com.blackiron.settings.fragments.lockscreen;
 
 import android.content.ContentResolver;
 import android.content.Context;
