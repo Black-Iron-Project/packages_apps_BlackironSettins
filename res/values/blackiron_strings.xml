@@ -17,7 +17,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <!-- About Blackiron -->
-    <string name="about_crdroid">About Blackiron</string>
+    <string name="about_blackiron">About Blackiron</string>
     <string name="about_device_name">Device</string>
 
     <!-- App Title -->
@@ -65,6 +65,7 @@
     <string name="notification_color">Notification color</string>
     <string name="wallpaper_color">Wallpaper color</string>
     <string name="custom_color">Custom color</string>
+    <string name="reevaluating_theme">Reloading system themes...</string>
 
     <!-- Changelog -->
     <string name="changelog_blackiron_title">Current changelog</string>
@@ -1309,4 +1310,34 @@
     <string name="statusbar_top_padding">Top padding</string>
     <string name="statusbar_left_padding">Left padding</string>
     <string name="statusbar_right_padding">Right padding</string>
+    
+    <!-- Custom Clock Style -->
+    <string name="lockscreen_clock_category_title">Lockscreen Clock</string>
+    <string name="lockscreen_clock_category_summary">Configure lockscreen clock styles</string>
+    <string name="custom_clock_style">Custom Clock Style</string>
+    
+    <!-- Lockscreen widgets  -->
+    <string name="lockscreen_widgets_title">Lockscreen Widgets</string>
+    <string name="lockscreen_widgets_enabled_title">Enable Lockscreen Widgets</string>
+    <string name="lockscreen_widgets_enabled_summary">Add widgets to lockscreen</string>
+	<string name="large_widgets_category_title">Big widgets</string>
+    <string name="main_custom_widgets1">Big widget 1</string>
+    <string name="main_custom_widgets2">Big widget 2</string>
+    <string name="mini_widgets_category_title">Mini widgets</string>
+    <string name="custom_widgets1">Mini widget 1</string>
+    <string name="custom_widgets2">Mini widget 2</string>
+    <string name="custom_widgets3">Mini widget 3</string>
+    <string name="custom_widgets4">Mini widget 4</string>
+    <string name="camera">Camera</string>
+    <string name="clock_timer">Clock/Timer</string>
+    <string name="calculator">Calculator</string>
+    <string name="gallery">Gallery</string>
+    <string name="media">Media Player</string>
+    <string name="torch">Torch</string>
+    <string name="controls_media_button_play">Play</string>
+    <string name="weather">Weather</string>
+    <string name="wifi">Wifi</string>
+    <string name="data">Data</string>
+    <string name="ringer">Ringer</string>
+    <string name="bt">Bluetooth</string>
 </resources>
