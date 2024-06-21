@@ -60,7 +60,7 @@
             android:defaultValue="false"
             lineage:position="solo" />
 
-        <com.blackiron.settings.preferences.SystemSettingListPreference
+        <com.blackiron.settings.preferences.SystemSettingSwitchPreference
             android:key="lockscreen_display_widgets"
             android:title="@string/lockscreen_display_widgets_title"
             android:summary="@string/lockscreen_display_widgets_summary"
