@@ -47,6 +47,12 @@
             android:fragment="com.blackiron.settings.fragments.lockscreen.LockClockFontsPicker"
             lineage:position="solo"/>
 
+	<Preference
+            android:key="depth_wallpaper"
+            android:title="@string/dw_wallpaper_enabled_title"
+            android:summary="@string/dw_wallpaper_enabled_summary"
+            android:fragment="com.blackiron.settings.fragments.lockscreen.WallpaperDepth" />
+
     </PreferenceCategory>
 
     <PreferenceCategory
