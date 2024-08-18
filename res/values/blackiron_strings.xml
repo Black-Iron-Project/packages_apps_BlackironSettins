@@ -1330,4 +1330,12 @@
     <string name="clipboard_auto_clear_summary">Automatically clear clipboard at the scheduled time</string>
     <string name="clipboard_auto_clear_enabled_title">Use clipboard auto clear</string>
     <string name="clipboard_auto_clear_timeout_disable_clipboard">Disable clipboard</string>
+
+    <!-- Boot Animation Preview Strings -->
+    <string name="boot_animation_preview_desc">Preview of the selected boot animation</string>
+    <string name="boot_animation_preview_summary">Displays a preview of the currently selected boot animation</string>
+    <string name="boot_animation_preview_title">Boot Animation Preview</string>
+
+    <!-- Boot Animation Style Strings -->
+    <string name="boot_animation_styles_summary">Choose a style for your boot animation</string>
 </resources>
