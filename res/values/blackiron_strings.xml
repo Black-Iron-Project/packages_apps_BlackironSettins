@@ -1367,4 +1367,8 @@
 
     <!-- Boot Animation Style Strings -->
     <string name="boot_animation_styles_summary">Choose a style for your boot animation</string>
+
+    <!-- Smart 5G -->
+    <string name="smart_5g_title">Smart 5G</string>
+    <string name="smart_5g_summary">Automatically switch between 5G and 4G to reduce battery consumption</string>
 </resources>
