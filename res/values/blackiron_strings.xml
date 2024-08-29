@@ -20,6 +20,9 @@
     <string name="about_blackiron">About Blackiron</string>
     <string name="about_device_name">Device</string>
 
+    <!-- BootAnimation Styles -->
+    <string name="boot_animation_styles_title">Bootanimation Styles</string>
+
     <!-- Apply Button --> 
     <string name="apply_change_button_title">Apply</string>
 
