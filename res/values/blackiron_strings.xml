@@ -1299,4 +1299,8 @@
     <!-- Adaptive Charging -->
     <string name="adaptive_charging_enabled_title">Optimized Charging</string>
     <string name="adaptive_charging_enabled_summary">Enable adaptive power strategy while device is charging</string>
+
+    <!-- Carrier name on lockscreen -->
+    <string name="lockscreen_show_carrier_title">Carrier name</string>
+    <string name="lockscreen_show_carrier_summary">Display carrier name in the status bar</string>
 </resources>
