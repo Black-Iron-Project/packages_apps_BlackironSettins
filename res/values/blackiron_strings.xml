@@ -1528,4 +1528,5 @@
     <string name="monet_engine_color_source_preset">Preset</string>
     <string name="monet_engine_whole_palette_title">Whole palette</string>
     <string name="monet_engine_whole_palette_summary">Make Luminance and Chroma selection affect secondary colors as well</string>
+    <string name="monet_engine_style_monochromatic">Monochromatic</string>
 </resources>
