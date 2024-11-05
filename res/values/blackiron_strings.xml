@@ -16,8 +16,10 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-    <!-- About Blackiron -->
-    <string name="about_crdroid">About Blackiron</string>
+    <!-- Black Iron Settings -->
+    <string name="blackiron_settings_dash_title">Black Iron Settings</string>
+    <string name="blackiron_settings_summary">Additional features</string>
+    <string name="about_blackiron">About Blackiron</string>
     <string name="about_device_name">Device</string>
 
     <!-- App Title -->
