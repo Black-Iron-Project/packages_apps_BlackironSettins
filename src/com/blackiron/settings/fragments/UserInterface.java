@@ -38,7 +38,6 @@ import com.android.settingslib.search.SearchIndexable;
 
 import com.blackiron.settings.fragments.ui.DozeSettings;
 import com.blackiron.settings.fragments.ui.SmartPixels;
-import com.blackiron.settings.fragments.ui.MonetSettings;
 
 import java.util.List;
 
@@ -85,7 +84,6 @@ public class UserInterface extends SettingsPreferenceFragment {
                 Settings.System.ENABLE_ROTATION_BUTTON, 1, UserHandle.USER_CURRENT);
 
         DozeSettings.reset(mContext);
-        MonetSettings.reset(mContext);
         SmartPixels.reset(mContext);
     }
 
