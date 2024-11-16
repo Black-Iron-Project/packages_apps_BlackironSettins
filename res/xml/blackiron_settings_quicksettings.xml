@@ -228,7 +228,7 @@
             android:key="qs_layout_columns_landscape"
             android:icon="@drawable/ic_qs_tile"
             android:title="@string/qs_columns_landscape_title"
-            android:max="5"
+            android:max="6"
             settings:min="2"
             settings:interval="1"
             android:defaultValue="4" />
