@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.blackiron.settings.fragments.lockscreen;
+package com.blackiron.settings.fragments.udfps;
 
 import android.content.ContentResolver;
 import android.content.Context;
@@ -24,24 +24,15 @@ import android.graphics.drawable.AnimationDrawable;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.os.UserHandle;
-import android.net.Uri;
-import android.provider.SearchIndexableResource;
 import android.provider.Settings;
-import android.text.TextUtils;
-import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup.LayoutParams;
 import android.view.ViewGroup;
-import android.widget.FrameLayout;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.core.content.res.ResourcesCompat;
 import androidx.preference.Preference.OnPreferenceChangeListener;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceScreen;
@@ -54,31 +45,29 @@ import com.bumptech.glide.Glide;
 
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 import com.android.settings.R;
+import com.android.settings.SettingsActivity;
 import com.android.settings.SettingsPreferenceFragment;
-import com.android.settings.search.BaseSearchIndexProvider;
-import com.android.settingslib.search.Indexable;
 
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 
-import org.json.JSONException;
-import org.json.JSONObject;
-
-public class UdfpsIconPicker extends SettingsPreferenceFragment {
+public class UdfpsAnimation extends SettingsPreferenceFragment {
 
     private RecyclerView mRecyclerView;
+    private String mPkg = "com.blackiron.udfps.animations";
+    private AnimationDrawable animation;
 
     private Resources udfpsRes;
 
-    private String mPkg = "com.blackiron.udfps.icons";
+    private String[] mAnims;
+    private String[] mAnimPreviews;
+    private String[] mTitles;
 
-    private String[] mIcons;
+    private UdfpsAnimAdapter mUdfpsAnimAdapter;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getActivity().setTitle(R.string.udfps_icon_picker_title);
+        getActivity().setTitle(R.string.udfps_recog_animation_effect_title);
 
         loadResources();
     }
@@ -91,7 +80,11 @@ public class UdfpsIconPicker extends SettingsPreferenceFragment {
             e.printStackTrace();
         }
 
-        mIcons = udfpsRes.getStringArray(udfpsRes.getIdentifier("udfps_icons",
+        mAnims = udfpsRes.getStringArray(udfpsRes.getIdentifier("udfps_animation_styles",
+                "array", mPkg));
+        mAnimPreviews = udfpsRes.getStringArray(udfpsRes.getIdentifier("udfps_animation_previews",
+                "array", mPkg));
+        mTitles = udfpsRes.getStringArray(udfpsRes.getIdentifier("udfps_animation_titles",
                 "array", mPkg));
     }
 
@@ -104,8 +97,8 @@ public class UdfpsIconPicker extends SettingsPreferenceFragment {
         mRecyclerView = (RecyclerView) view.findViewById(R.id.recycler_view);
         GridLayoutManager gridLayoutManager = new GridLayoutManager(getActivity(), 3);
         mRecyclerView.setLayoutManager(gridLayoutManager);
-        UdfpsIconAdapter mUdfpsIconAdapter = new UdfpsIconAdapter(getActivity());
-        mRecyclerView.setAdapter(mUdfpsIconAdapter);
+        mUdfpsAnimAdapter = new UdfpsAnimAdapter(getActivity());
+        mRecyclerView.setAdapter(mUdfpsAnimAdapter);
 
         return view;
     }
@@ -113,7 +106,7 @@ public class UdfpsIconPicker extends SettingsPreferenceFragment {
     public static void reset(Context mContext) {
         ContentResolver resolver = mContext.getContentResolver();
         Settings.System.putIntForUser(resolver,
-                Settings.System.UDFPS_ICON, 0, UserHandle.USER_CURRENT);
+                Settings.System.UDFPS_ANIM_STYLE, 0, UserHandle.USER_CURRENT);
     }
 
     @Override
@@ -121,77 +114,75 @@ public class UdfpsIconPicker extends SettingsPreferenceFragment {
         return MetricsEvent.BLKI_SETTINGS;
     }
 
-    @Override
-    public void onResume() {
-        super.onResume();
-    }
-
-    public class UdfpsIconAdapter extends RecyclerView.Adapter<UdfpsIconAdapter.UdfpsIconViewHolder> {
+    public class UdfpsAnimAdapter extends RecyclerView.Adapter<UdfpsAnimAdapter.UdfpsAnimViewHolder> {
         Context context;
-        String mSelectedIcon;
-        String mAppliedIcon;
+        String mSelectedAnim;
+        String mAppliedAnim;
 
-        public UdfpsIconAdapter(Context context) {
+        public UdfpsAnimAdapter(Context context) {
             this.context = context;
         }
 
         @Override
-        public UdfpsIconViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+        public UdfpsAnimViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
             View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_option, parent, false);
-            UdfpsIconViewHolder vh = new UdfpsIconViewHolder(v);
+            UdfpsAnimViewHolder vh = new UdfpsAnimViewHolder(v);
             return vh;
         }
 
         @Override
-        public void onBindViewHolder(UdfpsIconViewHolder holder, final int position) {
-            String iconRes = mIcons[position];
+        public void onBindViewHolder(UdfpsAnimViewHolder holder, final int position) {
+            String animName = mAnims[position];
 
             Glide.with(holder.image.getContext())
                     .load("")
-                    .placeholder(getDrawable(holder.image.getContext(), mIcons[position]))
+                    .placeholder(getDrawable(holder.image.getContext(), mAnimPreviews[position]))
                     .into(holder.image);
 
-            holder.image.setPadding(20,20,20,20);
-
-            holder.name.setVisibility(View.GONE);
+            holder.name.setText(mTitles[position]);
 
             if (position == Settings.System.getInt(context.getContentResolver(),
-                Settings.System.UDFPS_ICON, 0)) {
-                mAppliedIcon = iconRes;
-                if (mSelectedIcon == null) {
-                    mSelectedIcon = iconRes;
+                Settings.System.UDFPS_ANIM_STYLE, 0)) {
+                mAppliedAnim = animName;
+                if (mSelectedAnim == null) {
+                    mSelectedAnim = animName;
                 }
             }
-            holder.itemView.setActivated(iconRes == mSelectedIcon);
+
+            holder.itemView.setActivated(animName == mSelectedAnim);
             holder.itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    updateActivatedStatus(mSelectedIcon, false);
-                    updateActivatedStatus(iconRes, true);
-                    mSelectedIcon = iconRes;
+                    updateActivatedStatus(mSelectedAnim, false);
+                    updateActivatedStatus(animName, true);
+                    mSelectedAnim = animName;
+                    holder.image.setBackgroundDrawable(getDrawable(v.getContext(), mAnims[position]));
+                    animation = (AnimationDrawable) holder.image.getBackground();
+                    animation.setOneShot(true);
+                    animation.start();
                     Settings.System.putInt(getActivity().getContentResolver(),
-                            Settings.System.UDFPS_ICON, position);
+                            Settings.System.UDFPS_ANIM_STYLE, position);
                 }
             });
         }
 
         @Override
         public int getItemCount() {
-            return mIcons.length;
+            return mAnims.length;
         }
 
-        public class UdfpsIconViewHolder extends RecyclerView.ViewHolder {
+        public class UdfpsAnimViewHolder extends RecyclerView.ViewHolder {
             TextView name;
             ImageView image;
-            public UdfpsIconViewHolder(View itemView) {
+            public UdfpsAnimViewHolder(View itemView) {
                 super(itemView);
                 name = (TextView) itemView.findViewById(R.id.option_label);
                 image = (ImageView) itemView.findViewById(R.id.option_thumbnail);
             }
         }
 
-        private void updateActivatedStatus(String icon, boolean isActivated) {
-            int index = Arrays.asList(mIcons).indexOf(icon);
+        private void updateActivatedStatus(String anim, boolean isActivated) {
+            int index = Arrays.asList(mAnims).indexOf(anim);
             if (index < 0) {
                 return;
             }
@@ -206,9 +197,7 @@ public class UdfpsIconPicker extends SettingsPreferenceFragment {
         try {
             PackageManager pm = context.getPackageManager();
             Resources res = pm.getResourcesForApplication(mPkg);
-            Context ctx = context.createPackageContext(
-                    mPkg, Context.CONTEXT_IGNORE_SECURITY);
-            return ctx.getDrawable(res.getIdentifier(drawableName, "drawable", mPkg));
+            return res.getDrawable(res.getIdentifier(drawableName, "drawable", mPkg));
         }
         catch (PackageManager.NameNotFoundException e) {
             e.printStackTrace();

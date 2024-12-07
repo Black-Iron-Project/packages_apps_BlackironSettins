@@ -39,11 +39,9 @@ import com.android.internal.util.blackiron.Utils;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
+import com.android.internal.util.blackiron.udfps.UdfpsUtils;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settingslib.search.SearchIndexable;
-
-import com.blackiron.settings.fragments.lockscreen.UdfpsAnimation;
-import com.blackiron.settings.fragments.lockscreen.UdfpsIconPicker;
 
 import java.util.List;
 
@@ -60,18 +58,13 @@ public class LockScreen extends SettingsPreferenceFragment
     private static final String KEY_RIPPLE_EFFECT = "enable_ripple_effect";
     private static final String KEY_SMARTSPACE = "lockscreen_smartspace_enabled";
     private static final String KEY_WEATHER = "lockscreen_weather_enabled";
-    private static final String KEY_UDFPS_ANIMATIONS = "udfps_recognizing_animation_preview";
-    private static final String KEY_UDFPS_ICONS = "udfps_icon_picker";
-    private static final String SCREEN_OFF_UDFPS_ENABLED = "screen_off_udfps_enabled";
+    private static final String UDFPS_CATEGORY = "udfps_category";
 
-    private Preference mUdfpsAnimations;
-    private Preference mUdfpsIcons;
     private Preference mFingerprintVib;
     private Preference mFingerprintVibErr;
     private PreferenceCategory mUdfpsCategory;
     private Preference mRippleEffect;
     private Preference mWeather;
-    private Preference mScreenOffUdfps;
 
     private SwitchPreferenceCompat mSmartspace;
 
@@ -83,34 +76,24 @@ public class LockScreen extends SettingsPreferenceFragment
 
         addPreferencesFromResource(R.xml.blackiron_settings_lockscreen);
 
+        PreferenceScreen prefScreen = getPreferenceScreen();
+
         PreferenceCategory gestCategory = (PreferenceCategory) findPreference(LOCKSCREEN_GESTURES_CATEGORY);
 
         FingerprintManager mFingerprintManager = (FingerprintManager)
                 getActivity().getSystemService(Context.FINGERPRINT_SERVICE);
-        mUdfpsAnimations = (Preference) findPreference(KEY_UDFPS_ANIMATIONS);
-        mUdfpsIcons = (Preference) findPreference(KEY_UDFPS_ICONS);
         mRippleEffect = (Preference) findPreference(KEY_RIPPLE_EFFECT);
-        mScreenOffUdfps = (Preference) findPreference(SCREEN_OFF_UDFPS_ENABLED);
 
         if (mFingerprintManager == null || !mFingerprintManager.isHardwareDetected()) {
-            gestCategory.removePreference(mUdfpsAnimations);
-            gestCategory.removePreference(mUdfpsIcons);
             gestCategory.removePreference(mRippleEffect);
-            gestCategory.removePreference(mScreenOffUdfps);
-        } else {
-            if (!Utils.isPackageInstalled(getContext(), "com.blackiron.udfps.animations")) {
-                gestCategory.removePreference(mUdfpsAnimations);
-            }
-            if (!Utils.isPackageInstalled(getContext(), "com.blackiron.udfps.icons")) {
-                gestCategory.removePreference(mUdfpsIcons);
-            }
+        }
             Resources resources = getResources();
-            boolean screenOffUdfpsAvailable = resources.getBoolean(
-                    com.android.internal.R.bool.config_supportScreenOffUdfps) ||
-                    !TextUtils.isEmpty(resources.getString(
-                        com.android.internal.R.string.config_dozeUdfpsLongPressSensorType));
-            if (!screenOffUdfpsAvailable)
-                gestCategory.removePreference(mScreenOffUdfps);
+    
+
+        mUdfpsCategory = findPreference(UDFPS_CATEGORY);
+
+        if (!UdfpsUtils.hasUdfpsSupport(getContext())) {
+            gestCategory.removePreference(mUdfpsCategory);
         }
 
         mSmartspace = (SwitchPreferenceCompat) findPreference(KEY_SMARTSPACE);
@@ -154,12 +137,8 @@ public class LockScreen extends SettingsPreferenceFragment
                 Settings.System.LOCKSCREEN_WEATHER_LOCATION, 0, UserHandle.USER_CURRENT);
         Settings.System.putIntForUser(resolver,
                 Settings.System.LOCKSCREEN_WEATHER_TEXT, 1, UserHandle.USER_CURRENT);
-        Settings.Secure.putIntForUser(resolver,
-                Settings.Secure.SCREEN_OFF_UDFPS_ENABLED, 0, UserHandle.USER_CURRENT);
         Settings.System.putIntForUser(resolver,
                 Settings.System.LOCKSCREEN_SHOW_CARRIER, 1, UserHandle.USER_CURRENT);
-        UdfpsAnimation.reset(mContext);
-        UdfpsIconPicker.reset(mContext);
     }
 
     private void updateWeatherSettings() {
@@ -195,25 +174,9 @@ public class LockScreen extends SettingsPreferenceFragment
                     FingerprintManager mFingerprintManager = (FingerprintManager)
                             context.getSystemService(Context.FINGERPRINT_SERVICE);
                     if (mFingerprintManager == null || !mFingerprintManager.isHardwareDetected()) {
-                        keys.add(KEY_UDFPS_ANIMATIONS);
-                        keys.add(KEY_UDFPS_ICONS);
                         keys.add(KEY_RIPPLE_EFFECT);
-                        keys.add(SCREEN_OFF_UDFPS_ENABLED);
-                    } else {
-                        if (!Utils.isPackageInstalled(context, "com.blackiron.udfps.animations")) {
-                            keys.add(KEY_UDFPS_ANIMATIONS);
-                        }
-                        if (!Utils.isPackageInstalled(context, "com.blackiron.udfps.icons")) {
-                            keys.add(KEY_UDFPS_ICONS);
-                        }
+                    }
                         Resources resources = context.getResources();
-                        boolean screenOffUdfpsAvailable = resources.getBoolean(
-                            com.android.internal.R.bool.config_supportScreenOffUdfps) ||
-                            !TextUtils.isEmpty(resources.getString(
-                                com.android.internal.R.string.config_dozeUdfpsLongPressSensorType));
-                        if (!screenOffUdfpsAvailable)
-                            keys.add(SCREEN_OFF_UDFPS_ENABLED);
-                        }
                     return keys;
                 }
             };
