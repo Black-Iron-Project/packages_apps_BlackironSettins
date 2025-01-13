@@ -58,14 +58,6 @@
             android:title="@string/notification_heads_up_title"
             android:summary="@string/notification_heads_up_summary" />
 
-        <Preference
-            android:key="island_notification"
-            android:icon="@drawable/ic_message_fast"
-            android:title="@string/island_notification_title"
-            android:summary="@string/island_notification_summary"
-            android:fragment="com.blackiron.settings.fragments.notifications.IslandSettings"
-            android:dependency="heads_up_notifications_enabled" />
-
         <com.blackiron.settings.preferences.SystemSettingSwitchPreference
             android:key="less_boring_heads_up"
             android:icon="@drawable/ic_headsup_sleep"
