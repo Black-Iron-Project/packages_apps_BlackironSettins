@@ -81,12 +81,4 @@
         android:summary="@string/sensor_block_summary"
         android:fragment="com.blackiron.settings.fragments.misc.SensorBlock"/>
 
-    <!-- Pocket Judge -->
-    <com.blackiron.settings.preferences.SystemSettingSwitchPreference
-        android:key="pocket_judge"
-        android:icon="@drawable/ic_pocket"
-        android:title="@string/pocket_judge_title"
-        android:summary="@string/pocket_judge_summary"
-        android:defaultValue="false" />
-
 </PreferenceScreen>

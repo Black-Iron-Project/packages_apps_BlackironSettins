@@ -47,10 +47,8 @@ public class Miscellaneous extends SettingsPreferenceFragment implements
 
     public static final String TAG = "Miscellaneous";
 
-    private static final String POCKET_JUDGE = "pocket_judge";
     private static final String KEY_THREE_FINGERS_SWIPE = "three_fingers_swipe";
 
-    private Preference mPocketJudge;
     private ListPreference mThreeFingersSwipeAction;
 
     @Override
@@ -61,12 +59,6 @@ public class Miscellaneous extends SettingsPreferenceFragment implements
 
         final PreferenceScreen prefScreen = getPreferenceScreen();
         final Resources res = getResources();
-
-        mPocketJudge = (Preference) prefScreen.findPreference(POCKET_JUDGE);
-        boolean mPocketJudgeSupported = res.getBoolean(
-                com.android.internal.R.bool.config_pocketModeSupported);
-        if (!mPocketJudgeSupported)
-            prefScreen.removePreference(mPocketJudge);
 
         Action threeFingersSwipeAction = Action.fromSettings(getContentResolver(),
                 LineageSettings.System.KEY_THREE_FINGERS_SWIPE_ACTION,
@@ -106,8 +98,6 @@ public class Miscellaneous extends SettingsPreferenceFragment implements
 
     public static void reset(Context mContext) {
         ContentResolver resolver = mContext.getContentResolver();
-        Settings.System.putIntForUser(resolver,
-                Settings.System.POCKET_JUDGE, 0, UserHandle.USER_CURRENT);
         LineageSettings.System.putIntForUser(resolver,
                 LineageSettings.System.AUTO_BRIGHTNESS_ONE_SHOT, 0, UserHandle.USER_CURRENT);
         SensorBlock.reset(mContext);
@@ -128,11 +118,6 @@ public class Miscellaneous extends SettingsPreferenceFragment implements
                 public List<String> getNonIndexableKeys(Context context) {
                     List<String> keys = super.getNonIndexableKeys(context);
                     final Resources res = context.getResources();
-
-                    boolean mPocketJudgeSupported = res.getBoolean(
-                            com.android.internal.R.bool.config_pocketModeSupported);
-                    if (!mPocketJudgeSupported)
-                        keys.add(POCKET_JUDGE);
 
                     return keys;
                 }
