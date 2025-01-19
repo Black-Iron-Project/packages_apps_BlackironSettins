@@ -128,11 +128,19 @@
             android:defaultValue="true"
             android:dependency="lockscreen_weather_enabled" />
 
-        <!--<com.blackiron.settings.preferences.SystemSettingSwitchPreference
-            android:key="lockscreen_weather_style"
-            android:title="@string/lockscreen_weather_style_title"
-            android:summary="@string/lockscreen_weather_style_summary"
-            android:dependency="lockscreen_weather_enabled" />-->
+        <com.blackiron.settings.preferences.SystemSettingSwitchPreference
+            android:key="lockscreen_weather_wind_info"
+            android:title="@string/lockscreen_weather_wind_info_title"
+            android:summary="@string/lockscreen_weather_wind_info_summary"
+            android:defaultValue="true"
+            android:dependency="lockscreen_weather_enabled" />
+
+        <com.blackiron.settings.preferences.SystemSettingSwitchPreference
+            android:key="lockscreen_weather_humidity_info"
+            android:title="@string/lockscreen_weather_humidity_info_title"
+            android:summary="@string/lockscreen_weather_humidity_info_summary"
+            android:defaultValue="true"
+            android:dependency="lockscreen_weather_enabled" />
 
     </PreferenceCategory>
 
