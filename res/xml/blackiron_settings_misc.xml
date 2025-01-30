@@ -18,6 +18,13 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+         <Preference
+            android:key="spoofing"
+            android:icon="@drawable/ic_key"
+            android:title="@string/spoofing_title"
+            android:summary="@string/spoofing_title_summary"
+            android:fragment="com.blackiron.settings.fragments.Spoof" />
+ 
     <!-- Gaming mode -->
     <Preference
         android:key="gaming_mode"
