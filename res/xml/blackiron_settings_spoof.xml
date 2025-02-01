@@ -89,16 +89,16 @@
         android:summary="@string/app_spoof_selector_summary"
         app:position="bottom" />
 
-        <PreferenceCategory
+<!--        <PreferenceCategory
             android:title="@string/help_section_title"
             android:key="help_section">
 
-        <Preference
+       <Preference
             android:key="wiki_link"
             android:title="@string/help_footer_title"
             android:summary="@string/help_footer_summary"
             android:icon="@drawable/ic_custom_help"
             app:position="solo"/>
-    </PreferenceCategory>
+    </PreferenceCategory>  -->
 
 </PreferenceScreen>
