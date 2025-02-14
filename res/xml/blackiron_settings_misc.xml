@@ -20,7 +20,6 @@
 
          <Preference
             android:key="spoofing"
-            android:icon="@drawable/ic_key"
             android:title="@string/spoofing_title"
             android:summary="@string/spoofing_title_summary"
             android:fragment="com.blackiron.settings.fragments.Spoof" />
@@ -28,7 +27,6 @@
     <!-- Gaming mode -->
     <Preference
         android:key="gaming_mode"
-        android:icon="@drawable/ic_gaming"
         android:title="@string/gaming_mode_title"
         android:summary="@string/gaming_mode_summary">
 
@@ -41,7 +39,6 @@
     <!-- Google services
     <Preference
         android:key="gms_enabled_settings"
-        android:icon="@drawable/ic_google"
         android:title="@string/gms_enabled_title"
         android:summary="@string/gms_enabled_summary"
         android:fragment="com.blackiron.settings.fragments.misc.GmsSwitch"/> -->
@@ -49,7 +46,6 @@
     <!-- Parallel space
     <Preference
         android:key="parallel_space"
-        android:icon="@drawable/ic_parallel_space"
         android:title="@string/laboratory_parallel_space_title"
         android:summary="@string/laboratory_parallel_space_summary">
         <intent
@@ -60,7 +56,6 @@
     <!-- Sidebar -->
     <Preference
         android:key="sidebar"
-        android:icon="@drawable/ic_floating"
         android:title="@string/sidebar_title"
         android:summary="@string/sidebar_summary">
 
@@ -73,7 +68,6 @@
     <!-- Three fingers swipe action -->
     <ListPreference
         android:key="three_fingers_swipe"
-        android:icon="@drawable/ic_three_finger_gesture"
         android:dialogTitle="@string/three_fingers_swipe_title"
         android:title="@string/three_fingers_swipe_title"
         android:entries="@array/hardware_keys_action_entries"
@@ -83,7 +77,6 @@
     <!-- Sensor block per package -->
     <Preference
         android:key="sensor_block_settings"
-        android:icon="@drawable/ic_remote"
         android:title="@string/sensor_block_title"
         android:summary="@string/sensor_block_summary"
         android:fragment="com.blackiron.settings.fragments.misc.SensorBlock"/>

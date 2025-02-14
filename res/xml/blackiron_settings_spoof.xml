@@ -97,7 +97,6 @@
             android:key="wiki_link"
             android:title="@string/help_footer_title"
             android:summary="@string/help_footer_summary"
-            android:icon="@drawable/ic_custom_help"
             app:position="solo"/>
     </PreferenceCategory>  -->
 

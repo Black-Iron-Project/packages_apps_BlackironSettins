@@ -21,63 +21,54 @@
         <Preference
             android:key="statusbar_category"
             android:title="@string/statusbar_title"
-            android:fragment="com.blackiron.settings.fragments.StatusBar" 
-            android:icon="@drawable/ic_settings_statusbar2"/>
+            android:fragment="com.blackiron.settings.fragments.StatusBar" />
 
         <!-- Quick Settings panel -->
         <Preference
             android:key="quicksettings_category"
             android:title="@string/quicksettings_title"
-            android:fragment="com.blackiron.settings.fragments.QuickSettings"
-            android:icon="@drawable/ic_settings_quicksettings"/>
+            android:fragment="com.blackiron.settings.fragments.QuickSettings" />
 
         <!-- Buttons -->
         <Preference
             android:key="buttonsettings_category"
             android:title="@string/button_title"
-            android:fragment="com.blackiron.settings.fragments.Buttons"
-            android:icon="@drawable/ic_settings_buttons"/>
+            android:fragment="com.blackiron.settings.fragments.Buttons" />
 
         <!-- Navigation Bar -->
         <Preference
             android:key="navigationbar_category"
             android:title="@string/navigation_title"
-            android:fragment="com.blackiron.settings.fragments.Navigation"
-            android:icon="@drawable/ic_settings_navbar"/>
+            android:fragment="com.blackiron.settings.fragments.Navigation" />
 
         <!-- Sound -->
         <Preference
             android:key="sound_category"
             android:title="@string/sound_title"
-            android:fragment="com.blackiron.settings.fragments.Sound"
-            android:icon="@drawable/ic_settings_sound"/>
+            android:fragment="com.blackiron.settings.fragments.Sound" />
 
         <!-- Lock Screen -->
         <Preference
             android:key="lockscreen_category"
             android:title="@string/lockscreen_title"
-            android:fragment="com.blackiron.settings.fragments.LockScreen"
-            android:icon="@drawable/ic_settings_lockscreens"/>
+            android:fragment="com.blackiron.settings.fragments.LockScreen" />
 
         <!-- UI -->
         <Preference
             android:key="ui_settings"
             android:title="@string/ui_title"
-            android:fragment="com.blackiron.settings.fragments.UserInterface"
-            android:icon="@drawable/ic_settings_ui"/>
+            android:fragment="com.blackiron.settings.fragments.UserInterface" />
 
         <!-- Notifications -->
         <Preference
             android:key="notifications_category"
             android:title="@string/notifications_title"
-            android:fragment="com.blackiron.settings.fragments.Notifications"
-            android:icon="@drawable/ic_settings_notification"/>
+            android:fragment="com.blackiron.settings.fragments.Notifications" />
 
         <!-- Misc -->
         <Preference
             android:key="misc_category"
             android:title="@string/misc_title"
-            android:fragment="com.blackiron.settings.fragments.Miscellaneous"
-            android:icon="@drawable/ic_settings_miscs"/>
+            android:fragment="com.blackiron.settings.fragments.Miscellaneous" />
 
 </PreferenceScreen>
