@@ -22,6 +22,7 @@
     <string name="about_blackiron">About Blackiron</string>
     <string name="about_device_name">Device</string>
     <string name="search_apps">Search apps</string>
+    <string name="search">Search</string>
 
     <!-- BootAnimation Styles -->
     <string name="boot_animation_styles_title">Bootanimation Styles</string>
@@ -1452,4 +1453,10 @@
     <!-- Heads-up -->
     <string name="compact_heads_up_notifications_enabled_title">Compact heads-up</string>
     <string name="compact_heads_up_notifications_enabled_summary">Display notifications in compact size</string>
+
+    <!-- Hide applist -->
+    <string name="hide_applist_title">Hide applist</string>
+    <string name="hide_applist_summary">Prevent apps from checking selected apps from appslist</string>
+    <string name="menu_show_overlay">Show overlay</string>
+    <string name="menu_hide_overlay">Hide overlay</string>
 </resources>

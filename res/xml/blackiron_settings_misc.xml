@@ -24,6 +24,13 @@
             android:summary="@string/spoofing_title_summary"
             android:fragment="com.blackiron.settings.fragments.Spoof" />
  
+         <!-- Hide applist -->
+        <Preference
+            android:key="hide_applist_setting"
+            android:title="@string/hide_applist_title"
+            android:summary="@string/hide_applist_summary"
+            android:fragment="com.blackiron.settings.fragments.misc.HideAppListSettings" />
+ 
     <!-- Gaming mode -->
     <Preference
         android:key="gaming_mode"
