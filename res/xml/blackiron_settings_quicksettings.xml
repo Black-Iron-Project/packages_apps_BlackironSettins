@@ -29,29 +29,12 @@
             android:summary="@string/qs_header_image_summary"
             android:fragment="com.blackiron.settings.fragments.quicksettings.QsHeaderImageSettings" />
 
-        <!-- QS clock
+        <!-- QS Media Player  -->
         <com.blackiron.settings.preferences.SystemSettingSwitchPreference
-            android:key="show_qs_clock"
-            android:title="@string/qs_clock_title"
-            android:summary="@string/qs_clock_summary"
-            android:defaultValue="true" />
-
-        <com.blackiron.settings.preferences.SystemSettingSeekBarPreference
-            android:key="qs_header_clock_size"
-            android:title="@string/clock_font_size_title"
-            android:max="27"
-            settings:min="10"
-            settings:interval="1"
-            android:defaultValue="14"
-            android:dependency="show_qs_clock"
-            settings:units="@string/unit_pixels" /> -->
-
-        <!-- QS date
-        <com.blackiron.settings.preferences.SystemSettingSwitchPreference
-            android:key="show_qs_date"
-            android:title="@string/qs_date_title"
-            android:summary="@string/qs_date_summary"
-            android:defaultValue="true" /> -->
+            android:key="qs_compact_media_player_mode"
+            android:title="@string/qs_compact_media_player_mode_title"
+            android:summary="@string/qs_compact_media_player_mode_summary"
+            android:defaultValue="false" />
 
         <!-- Battery styles -->
         <com.blackiron.settings.preferences.SystemSettingListPreference

@@ -1494,4 +1494,8 @@
     <string name="dw_footer_text">
         The depth wallpaper feature, inspired by iOS\'s Wallpaper Subject Segmentation, enables overlaying of a subject above the lockscreen clock to show a wallpaper depth effect.\n\nTo setup Depth Wallpaper Feature:\n1. Set a wallpaper with the subject or a background you want the subject to be above of.\n2. Select a subject image to track, this image will be overlaid above the lockscreen clock.\n3. Modify the offsets and opacity according to your needs.
     </string>
+
+    <!-- Compact QS Media Player-->
+    <string name="qs_compact_media_player_mode_title">Compact QS media player</string>
+    <string name="qs_compact_media_player_mode_summary">Enable compact mode for QuickSettings media player</string>
 </resources>
