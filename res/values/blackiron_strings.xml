@@ -1536,4 +1536,8 @@
     <string name="qs_header_style2">Oxygen</string>
     <string name="qs_header_style3">Analog</string>
     <string name="qs_header_style4">Simple</string>
+
+    <!-- Brightness slider percentage -->
+    <string name="quick_settings_show_brightness_percentage_title">Brightness percentage</string>
+    <string name="quick_settings_show_brightness_percentage_summary">Show brightness percentage text along with the slider</string>
 </resources>
