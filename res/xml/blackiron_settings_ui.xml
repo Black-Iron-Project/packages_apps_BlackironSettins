@@ -40,6 +40,18 @@
         android:summary="@string/wallpaper_settings_summary"
         android:fragment="com.blackiron.settings.fragments.ui.Wallpaper" />
 
+    <PreferenceCategory
+        android:key="themes_monet_category"
+        android:title="@string/themes_monet_category">
+
+        <!-- Monet engine -->
+        <Preference
+            android:key="monet_engine"
+            android:title="@string/themes_monet_title"
+            android:summary="@string/themes_monet_summary"
+            android:fragment="com.blackiron.settings.fragments.ui.MonetSettings" />
+    </PreferenceCategory>
+
     <!-- Charging animation -->
     <com.blackiron.settings.preferences.SystemSettingSwitchPreference
         android:key="charging_animation"
