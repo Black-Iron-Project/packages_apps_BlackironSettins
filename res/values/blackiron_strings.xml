@@ -249,6 +249,11 @@
     <string name="advanced_reboot_secured_title">Secured lockscreen</string>
     <string name="advanced_reboot_secured_summary">Display advanced restart options on secured lockscreen</string>
 
+    <!-- SystemUI restart dialog -->
+    <string name="systemui_restart_title">SystemUI restart required</string>
+    <string name="systemui_restart_message">For changes to take effect, a SystemUI restart is required. Restart SystemUI now?</string>
+    <string name="systemui_restart_yes">Yes</string>
+    <string name="systemui_restart_not_now">Not now</string>
 
     <!-- Auto pin confirm -->
     <string name="lock_screen_auto_pin_confirm_summary_custom">Unlock automatically if you input a correct PIN. This is slightly less secure than tapping Enter to confirm.</string>
@@ -428,6 +433,7 @@
     <!-- Quick setting categories -->
     <string name="qs_misc_category">Miscellaneous</string>
     <string name="qs_footer_category">Footer</string>
+    <string name="quick_settings_header_needs_gallery">You must install a gallery app!</string>
 
     <!-- QS clock -->
     <string name="qs_clock_title">Clock</string>
@@ -1460,4 +1466,32 @@
     <string name="lockscreen_albumart_filter_tint">Accent tinted</string>
     <string name="lockscreen_albumart_filter_blur">Blur</string>
     <string name="lockscreen_albumart_filter_grayblur">Grayscale and blurred</string>
+
+    <!-- Wallpaper Styles -->
+    <string name="wallpaper_settings_title">Wallpaper styles</string>
+    <string name="wallpaper_settings_summary">Configure wallpaper styles and settings</string>
+    <string name="wallpaper_blur_title">Wallpaper blur</string>
+    <string name="wallpaper_blur_summary">Enable or disable wallpaper blur effect</string>
+    <string name="wallpaper_blur_filter">Wallpaper blur style</string>
+    <string name="wallpaper_dim_title">Wallpaper dim</string>
+    <string name="wallpaper_dim_level_title">Wallpaper dim level</string>
+    <string name="wallpaper_dim_level_summary">Configure wallpaper dim level</string>
+    <string name="glass_blur">Glass blur</string>
+    <string name="frosted_blur">Frosted blur</string>
+    <string name="wallpaper_styles_footer">
+        For wallpaper styles to work effectively, users must set the wallpapers for the lockscreen and homescreen at different times.\nThe same wallpaper can be used, but it should not be applied to both the lockscreen and homescreen at the same time.\nThis is optional when using the BOTH OPTION for wallpaper blur and dim styles.
+    </string>
+
+    <!-- Depth Wallpaper -->
+    <string name="dw_file_header_select_title">Select Depth wallpaper subject</string>
+    <string name="dw_file_header_select_summary">Select depth wallpaper subject image from storage.</string>
+    <string name="dw_wallpaper_enabled_title">Depth wallpaper</string>
+    <string name="dw_wallpaper_enabled_summary_tile">Apply depth effect\nto wallpaper</string>
+    <string name="dw_wallpaper_enabled_summary">Enable iOS-inspired depth wallpaper. Requires a subject image.</string>
+    <string name="dw_wallpaper_opacity_title">Depth wallpaper opacity</string>
+    <string name="depth_wallpaper_offset_x_title">Depth wallpaper horizontal offset</string>
+    <string name="depth_wallpaper_offset_y_title">Depth wallpaper vertical offset</string>
+    <string name="dw_footer_text">
+        The depth wallpaper feature, inspired by iOS\'s Wallpaper Subject Segmentation, enables overlaying of a subject above the lockscreen clock to show a wallpaper depth effect.\n\nTo setup Depth Wallpaper Feature:\n1. Set a wallpaper with the subject or a background you want the subject to be above of.\n2. Select a subject image to track, this image will be overlaid above the lockscreen clock.\n3. Modify the offsets and opacity according to your needs.
+    </string>
 </resources>

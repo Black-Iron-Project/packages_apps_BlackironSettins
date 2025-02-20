@@ -33,6 +33,13 @@
             android:summary="@string/boot_animation_styles_summary"
             android:fragment="com.blackiron.settings.fragments.ui.BootAnimationSettings" />
 
+    <!-- Wallpaper Settings -->
+    <Preference
+        android:key="wallpaper_settings"
+        android:title="@string/wallpaper_settings_title"
+        android:summary="@string/wallpaper_settings_summary"
+        android:fragment="com.blackiron.settings.fragments.ui.Wallpaper" />
+
     <!-- Charging animation -->
     <com.blackiron.settings.preferences.SystemSettingSwitchPreference
         android:key="charging_animation"
