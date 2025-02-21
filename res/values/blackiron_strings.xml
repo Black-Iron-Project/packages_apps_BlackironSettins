@@ -1165,7 +1165,7 @@
     <string name="radio_info_title">Radio info</string>
 
     <!-- QS Header -->
-    <string name="qs_header_image_title">Header image</string>
+    <string name="qs_header_image_title">QS Header image</string>
     <string name="qs_header_image_summary">Select QS background header image</string>
     <string name="qs_header_daylight_pack_title">Header image collection</string>
     <string name="qs_header_shadow_title">Header image shadow</string>
@@ -1540,4 +1540,8 @@
     <!-- Brightness slider percentage -->
     <string name="quick_settings_show_brightness_percentage_title">Brightness percentage</string>
     <string name="quick_settings_show_brightness_percentage_summary">Show brightness percentage text along with the slider</string>
+
+    <!-- QS Widgets -->
+    <string name="qs_widgets_enabled_title">QS widgets</string>
+    <string name="qs_widgets_enabled_summary">Show widgets for quick access. \nLimits QS rows to 2 to avoid breaking AOSP QS Panel scrolling</string>
 </resources>

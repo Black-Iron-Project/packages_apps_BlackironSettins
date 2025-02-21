@@ -37,6 +37,8 @@ import com.android.settingslib.search.SearchIndexable;
 
 import com.blackiron.settings.fragments.quicksettings.QsHeaderImageSettings;
 import com.blackiron.settings.preferences.CustomSeekBarPreference;
+import com.blackiron.settings.preferences.SystemSettingSwitchPreference;
+import com.blackiron.settings.utils.SystemUtils;
 
 import lineageos.providers.LineageSettings;
 
@@ -58,6 +60,7 @@ public class QuickSettings extends SettingsPreferenceFragment implements
     private static final String KEY_PREF_TILE_ANIM_INTERPOLATOR = "qs_tile_animation_interpolator";
     private static final String KEY_QS_UI_STYLE  = "qs_tile_ui_style";
     private static final String KEY_QS_PANEL_STYLE  = "qs_panel_style";
+    private static final String KEY_QS_WIDGETS_ENABLED  = "qs_widgets_enabled";
 
     private ListPreference mShowBrightnessSlider;
     private ListPreference mBrightnessSliderPosition;
@@ -68,6 +71,7 @@ public class QuickSettings extends SettingsPreferenceFragment implements
     private ListPreference mTileAnimationInterpolator;
     private ListPreference mQsUI;
     private ListPreference mQsPanelStyle;
+    private SystemSettingSwitchPreference mQsWidgetsPref;
 
     private static ThemeUtils mThemeUtils;
 
@@ -119,6 +123,9 @@ public class QuickSettings extends SettingsPreferenceFragment implements
         mQsPanelStyle = (ListPreference) findPreference(KEY_QS_PANEL_STYLE);
         mQsPanelStyle.setOnPreferenceChangeListener(this);
 
+        mQsWidgetsPref = findPreference(KEY_QS_WIDGETS_ENABLED);
+        mQsWidgetsPref.setOnPreferenceChangeListener(this);
+
         checkQSOverlays(mContext);
     }
 
@@ -150,6 +157,9 @@ public class QuickSettings extends SettingsPreferenceFragment implements
                     Settings.System.QS_PANEL_STYLE, value, UserHandle.USER_CURRENT);
             updateQsPanelStyle(getContext());
             checkQSOverlays(getContext());
+            return true;
+        } else if (preference == mQsWidgetsPref) {
+            SystemUtils.showSystemUiRestartDialog(getContext());
             return true;
         }
         return false;
